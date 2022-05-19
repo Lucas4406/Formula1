@@ -175,11 +175,14 @@
 }
 .link-text{
     color:red;
-    font-size:20px;
+    font-size:22px;
     margin-left:200px;
     margin-right:100px;
     text-decoration: none;
 }
 .link-text:hover{
     text-decoration: underline;
+}
+.link-container{
+    display:flex;
 }
