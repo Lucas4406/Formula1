@@ -13,6 +13,11 @@
     margin-left:10px;
     margin-right:10px;
 }
+@media(max-width:1380px){
+    .content-grid{
+        grid-template-columns: 1fr;
+    }
+}
 .photo{
     width:100%;
 }
