@@ -84,3 +84,10 @@ content.row{
     font-size: 50px;
     font-weight:bold;
 }
+
+@media(max-width:1380px){
+    .content-text{
+        display: flex;
+        justify-content: center;
+    }
+}

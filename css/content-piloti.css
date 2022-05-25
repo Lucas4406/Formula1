@@ -43,18 +43,26 @@
     width:100%;
     border:4px solid black;
     border-radius:20px;
-    margin-top:22px;
+    height: 100%;
+    object-fit: cover;
 }
 .info{
-    font-size:20px;
+    font-size:1.2rem;
     margin-left:10px;
 }
 .pozapilot{
     margin-top:5px;
+    margin-bottom: 20px;
 }
 .numepilot{
     font-weight:600;
     font-size:30px;
     margin-bottom:20px;
     margin-top:20px;
+}
+
+@media(max-width:1000px){
+    .piloti{
+        grid-template-columns:1fr;
+    }
 }
