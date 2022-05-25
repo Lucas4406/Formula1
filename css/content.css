@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 .stire{
     transition:0.15s;
 }
