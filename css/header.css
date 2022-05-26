@@ -9,11 +9,16 @@ body{
     background-color:black;
     border:none;
     cursor:pointer;
-    font-size:25px;
-    height:40px;
+    font-size:1.7rem;
     font-weight: bold;
     transition:0.15s;
-    padding-right:10px;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+}
+.button a{
+    align-items: center;
+    justify-content: center;
 }
 .buton:hover{
     opacity:0.7;
