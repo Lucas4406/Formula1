@@ -26,14 +26,12 @@
     margin:auto;
 }
 .titlu-circuit{
-    font-family: Arial;
     font-size:50px;
     margin:auto;
     text-align: center;
     font-weight:bold;
 }
 .titlu-data{
-    font-family: Arial;
     font-size:20px;
     margin:auto;
     text-align: center;
@@ -55,7 +53,6 @@
     height:100%;
 }
 .tara-text{
-    font-family: Arial;
     font-size:40px;
     margin:auto;
     font-weight:600;
