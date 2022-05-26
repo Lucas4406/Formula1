@@ -1,6 +1,6 @@
 body{
-    padding-top:108px;
-    padding-bottom:10px;
+    padding-top:8rem;
+    padding-bottom:.8rem;
     margin-left:0;
     margin-right:0;
     font-family: 'Roboto', sans-serif;
@@ -19,25 +19,32 @@ body{
 .buton:hover{
     opacity:0.7;
 }
-.fia{
-    background-color:black;
-    border:none;
-    cursor:pointer;
-    margin:0px;
-    position:absolute;
-    right:0%;
-    margin-top:5px;
-}
-.logo{
-    padding:.5rem 0;
-}
 .logo-f1{
     background-color:black;
     border:none;
     cursor:pointer;
-    padding-top:5px;
-    width:110%;
-    height:5vh;
+    width:100%;
+    height: auto;
+}
+.logo-fia{
+    background-color:black;
+    border:none;
+    cursor:pointer;
+    width:100%;
+}
+.logo{
+    width:250px;
+    height:80px;
+    padding-top:.7rem;
+}
+.fia{
+    width:100px;
+    height:80px;
+    background-color:black;
+    border:none;
+    cursor:pointer;
+    margin:0px;
+    padding-top:.7rem;
 }
 .sus{
     background-color:black;
@@ -53,7 +60,6 @@ body{
     right:0;
     display:flex;
     flex-direction: column;
-    height:50vh;
 }
 .bar{
     background-color:black;
@@ -66,14 +72,4 @@ body{
     height:50px;
     align-items: center;
     padding: 0 0.6rem;
-}
-.logo-fia{
-    flex:1;
-    width:100%;
-    height:5vh;
-}
-.fia{
-    display: flex;
-    align-content: center;
-    padding:.5rem 0;
 }
