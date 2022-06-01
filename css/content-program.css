@@ -1,13 +1,12 @@
 .content{
     display:grid;
     grid-template-rows:1fr 1fr 1fr 1fr;
-    row-gap:20px;
-    margin-top:4px;
+    row-gap:1.2rem;
+    margin-top:.4rem;
 }
 .linie{
     display:grid;
     grid-template-columns:30% 1fr;
-    height:500px;
     transition: 0.15s;
     min-width:0;
     border:3px solid red;
@@ -26,22 +25,19 @@
     margin:auto;
 }
 .titlu-circuit{
-    font-family: Arial;
-    font-size:50px;
+    font-size:3rem;
     margin:auto;
     text-align: center;
     font-weight:bold;
 }
 .titlu-data{
-    font-family: Arial;
-    font-size:20px;
+    font-size:1.2rem;
     margin:auto;
     text-align: center;
 }
 .c2-linia1{
     display:grid;
     grid-template-rows:20% 1fr;
-    height: 100%;
 }
 .c2-l1-col1{
     display:grid;
@@ -51,23 +47,26 @@
     border-bottom-width:3px;
 }
 .poza-steag{
-    max-width:100%;
-    height:100%;
+    width:100%;
+    /* height:100%; */
+    object-fit: cover;
+}
+.steag{
+    display:flex;
 }
 .tara-text{
-    font-family: Arial;
     font-size:40px;
-    margin:auto;
     font-weight:600;
-    margin-left:10px;
+    margin-left:.6rem;
+    margin-top:0;
+    margin-bottom:0;
 }
 .tara{
-    margin-top:24px;
-    margin-bottom:24px;
+    display:flex;
+    align-items: center;
     text-align:left;
 }
 .c2-l1-col2{
-    margin:auto;
     display:grid;
     grid-template-columns: 1fr 20%;
     height:100%;
@@ -126,10 +125,8 @@
     margin-left:10px;
     margin-right:10px;
     font-size:1rem;
-    margin-bottom:50px;
     font-weight:500;
 }
 .text-cursa-grid{
     border-left: 3px solid black;
-    height:auto;
 }
