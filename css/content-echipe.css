@@ -1,6 +1,6 @@
 .box-fe, .box-me, .box-re, .box-mc, .box-al, .box-ha, .box-wi, .box-am, .box-at, .box-af{
     border:3px solid black;
-    height:300px;
+    height:auto;
     display:grid;
     grid-template-rows: 1fr 1fr 2fr;
     border-left:0;
@@ -85,6 +85,7 @@
     row-gap: 30px;
     justify-content: center;
     margin-top:7px;
+    height: 100vh;
 }
 
 @media(max-width:1100px){
