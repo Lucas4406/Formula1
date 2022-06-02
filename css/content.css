@@ -11,10 +11,10 @@ body{
 .content-grid{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    column-gap:20px;
-    row-gap:20px;
-    margin-left:10px;
-    margin-right:10px;
+    column-gap:1.25rem;
+    row-gap:1.25rem;
+    margin-left:0.625rem;
+    margin-right:0.625rem;
 }
 @media(max-width:1380px){
     .content-grid{
@@ -25,13 +25,12 @@ body{
     width:100%;
 }
 .text{
-    font-family: Arial;
-    font-size:30px;
-    padding-left:5px;
-    padding-bottom:20px;
+    font-size:2rem;
+    padding-left:0.313rem;
+    padding-bottom:1.25rem;
     margin-bottom: 0;
     margin-top:0;
-    padding-top: 20px;
+    padding-top: 1.25rem;
 }
 .content-photo{
     background-color:black;
@@ -62,8 +61,7 @@ content.row{
     grid-template-rows: 1fr 1fr;
 }
 .titlu-text{
-    font-size:50px;
-    font-family: Arial;
+    font-size:2.5rem;
     font-weight:bold;
     text-align:center;
 }
@@ -71,23 +69,20 @@ content.row{
     display:flex;
     justify-content:space-between;
     flex-direction:row;
-    margin-top:10px;
-    margin-right:10px;
-    margin-left:10px;
+    margin-right:0.625rem;
+    margin-left:0.625rem;
     align-items: center;
 }
 .titlu-poza{
-    width:200px;
+    width:100px;
 }
-.titlu-text{
-    font-family: Arial;
-    font-size: 50px;
-    font-weight:bold;
-}
-
 @media(max-width:1380px){
     .content-text{
         display: flex;
         justify-content: center;
     }
+}
+.stiri{
+    margin-bottom:1rem;
+    margin-top: 1.2%;
 }
