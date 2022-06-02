@@ -80,17 +80,20 @@
 }
 .content{
     display:grid;
-    grid-template-columns: 500px 500px;
-    column-gap:100px;
-    row-gap: 30px;
+    grid-template-columns: 30% 30%;
+    column-gap:6.25rem;
+    row-gap: 1.875rem;
     justify-content: center;
-    margin-top:7px;
+    margin-top:1vh;
     height: 100vh;
 }
 
 @media(max-width:1100px){
     .content{
-        grid-template-columns: 500px;
+        grid-template-columns: 70%;
+    }
+    .box-fe, .box-me, .box-re, .box-mc, .box-al, .box-ha, .box-wi, .box-am, .box-at, .box-af{
+        height:25vh;
     }
 }
 .linie1{
