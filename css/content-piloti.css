@@ -18,25 +18,25 @@
 .piloti{
     display:grid;
     grid-template-columns:1fr 1fr;
-    column-gap: 50px;
-    margin-left:10px;
+    column-gap: 3.125rem;
+    margin-left:0.625rem;
 }
 .nume-echipa{
-    font-size: 40px;
+    font-size: 3rem;
     font-weight:600;
     display:flex;
     justify-content: center;
-    margin:auto;
+    align-items: center;
 }
 .pilot1{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
+    column-gap: 0.625rem;
 }
 .pilot2{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
+    column-gap: 0.625rem;
 }
 .poza{
     width:100%;
@@ -47,21 +47,24 @@
 }
 .info{
     font-size:1.2rem;
-    margin-left:10px;
+    margin-left:0.625rem;
 }
 .pozapilot{
-    margin-top:5px;
-    margin-bottom: 20px;
+    margin-top:0.313rem;
+    margin-bottom: 1.25rem;
 }
 .numepilot{
     font-weight:600;
-    font-size:30px;
-    margin-bottom:20px;
-    margin-top:20px;
+    font-size:1.875rem;
+    margin-bottom:1.25rem;
+    margin-top:1.25rem;
 }
 
 @media(max-width:1000px){
     .piloti{
         grid-template-columns:1fr;
+    }
+    .box{
+        grid-template-rows: 1fr 12fr;
     }
 }
