@@ -1,6 +1,6 @@
 .box-fe, .box-me, .box-re, .box-mc, .box-al, .box-ha, .box-wi, .box-am, .box-at, .box-af{
     border:3px solid black;
-    height:auto;
+    height:35vh;
     display:grid;
     grid-template-rows: 1fr 1fr 2fr;
     border-left:0;
@@ -93,17 +93,17 @@
         grid-template-columns: 70%;
     }
     .box-fe, .box-me, .box-re, .box-mc, .box-al, .box-ha, .box-wi, .box-am, .box-at, .box-af{
-        height:20vh;
+        height:auto;
     }
 }
-@media(max-height:800px){
+/* @media(max-height:1200px){
     .box-fe, .box-me, .box-re, .box-mc, .box-al, .box-ha, .box-wi, .box-am, .box-at, .box-af{
-        height:60vh;
+        height:40vh;
     }
     .content{
         grid-template-columns: 50%;
     }
-}
+} */
 .linie1{
     display:grid;
     grid-template-columns: 1fr 3fr 1fr;
