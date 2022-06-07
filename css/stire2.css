@@ -67,10 +67,6 @@
     align-items:center;
     color:#949498;
 }
-.gol{
-    display:flex;
-    align-items: flex-end;
-}
 .btn1:hover{
     background-color:#2b4d97;
     border:1px solid #2b4d97;
@@ -82,29 +78,31 @@
     cursor:pointer;
 }
 .data{
-    font-weight:100px;
-    margin-top:30px;
+    font-weight:400;
+    margin-top:2rem;
     margin-bottom: 0;
 }
 .pozastiri{
     display:flex;
-    column-gap: 30px;
+    flex-direction: row;
+    margin: 0 auto;
+    width:80vw;
+    gap:2rem;
 }
 .poza{
+    display: flex;
     border:15px solid #e10600;
     border-bottom:0;
     border-left:0;
     border-radius:0 20px 0 0;  
-    width:60%;
-    margin-left:100px;
-    height:auto;
+    max-width:1300px;
 }
 .poza-stire{
-    height:100%;
     width: 100%;
+    object-fit: cover;
 }
 .restul-div{
-    margin-top:30px;
+    margin-top:2rem;
 }
 .altestiri{
     display:grid;
@@ -184,4 +182,11 @@
 }
 .link-container{
     display:flex;
+}
+
+
+@media(max-width:900px){
+    .pozastiri{
+        flex-direction: column;
+    }
 }
