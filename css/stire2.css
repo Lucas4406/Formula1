@@ -1,7 +1,6 @@
 .content{
     display:grid;
     grid-template-rows: 1fr 4fr;
-    margin-top:10px;
 }
 .titlu{
     font-size:3em;
