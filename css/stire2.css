@@ -20,12 +20,12 @@
 .unbuton{
     background-color: white;
     color:red;
-    font-size:13px;
+    font-size:0.813rem;
     border:1px solid red;
-    padding:8px;
+    padding:0.5rem;
     border-radius:6px;
     transition: 0.1s;
-    margin-right:6px;
+    margin-right:.3rem;
 }
 .unbuton:hover{
     cursor:pointer;
@@ -60,7 +60,7 @@
 .share{
     display:flex;
     justify-content: flex-start;
-    column-gap: 10px;
+    column-gap: .6rem;
 }
 .text-share{
     display:flex;
