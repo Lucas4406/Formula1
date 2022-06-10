@@ -156,23 +156,23 @@
 }
 .scris-container{
     display:flex;
-    gap: 50px;
+    gap: 3.125rem;
 }
 .primul-text{
     font-weight: 700;
-    font-size: 20px;
-    margin-top:50px;
+    font-size: 1.25rem;
+    margin-top:3.125rem;
     margin-left:200px;
     margin-right:100px;
 }
 .doilea-text{
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-left:200px;
     margin-right:100px;
 }
 .link-text{
     color:red;
-    font-size:22px;
+    font-size:1.3rem;
     margin-left:200px;
     margin-right:100px;
     text-decoration: none;
@@ -185,11 +185,31 @@
 }
 
 
-@media(max-width:900px){
+@media(max-width:1200px){
     .pozastiri{
         flex-direction: column;
     }
     .altestiri{
         display:none;
+    }
+    .scris{
+        display:flex;
+        width:80vw;
+        margin: 0 auto;
+    }
+    .primul-text{
+        font-size: 1.5rem;
+        margin-left:0;
+        margin-right:0;
+    }
+    .doilea-text{
+        font-size: 1.5rem;
+        margin-left:0;
+        margin-right:0;
+    }
+    .link-text{
+        font-size:2rem;
+        margin-left:0;
+        margin-right:0;
     }
 }
