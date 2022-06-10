@@ -194,7 +194,7 @@
     }
     .scris{
         display:flex;
-        width:80vw;
+        width:90vw;
         margin: 0 auto;
     }
     .primul-text{
@@ -211,5 +211,11 @@
         font-size:2rem;
         margin-left:0;
         margin-right:0;
+    }
+    .title-div{
+        width: 90vw;
+    }
+    .pozastiri{
+        width:90vw;
     }
 }
