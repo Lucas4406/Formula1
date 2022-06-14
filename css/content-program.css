@@ -14,8 +14,8 @@
 }
 
 .coloana1{
-    display:grid;
-    grid-template-rows: 20% 1fr;
+    display:flex;
+    flex-direction: column;
 }
 
 .circuit{
