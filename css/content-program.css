@@ -5,10 +5,8 @@
     margin-top:.4rem;
 }
 .linie{
-    display:grid;
-    grid-template-columns:30% 1fr;
+    display:flex;
     transition: 0.15s;
-    height:100%;
     min-width:0;
     border:3px solid red;
 }
@@ -16,6 +14,8 @@
 .coloana1{
     display:flex;
     flex-direction: column;
+    padding-right:.5rem;
+    min-width: 30%;
 }
 
 .circuit{
@@ -37,19 +37,19 @@
     text-align: center;
 }
 .c2-linia1{
-    display:grid;
-    grid-template-rows:20% 1fr;
+    display:flex;
+    flex-direction: column;
 }
 .c2-l1-col1{
-    display:grid;
-    grid-template-columns:1fr 12%;
+    display:flex;
     border-bottom-style:solid;
     border-bottom-color:black;
+    justify-content: space-between;
     border-bottom-width:3px;
 }
 .poza-steag{
     width:100%;
-    /* height:100%; */
+    max-width: 100px;
     object-fit: cover;
     aspect-ratio: 16/9;
 }
@@ -59,19 +59,18 @@
 .tara-text{
     font-size:2.5rem;
     font-weight:600;
-    margin-left:.6rem;
-    margin-top:0;
-    margin-bottom:0;
 }
-.tara{
-    display:flex;
-    align-items: center;
-    text-align:left;
+
+@media(max-width:1000px){
+    .tara-text{
+        font-size:2rem;
+    }
+    .tara{
+        margin: 0 auto;
+    }
 }
 .c2-l1-col2{
-    display:grid;
-    grid-template-columns: 1fr 20%;
-    height:100%;
+    display:flex;
 }
 .program-cursa{
     border-left-style:solid;
@@ -79,26 +78,24 @@
     border-left-width:3px;
 }
 .program-cursa{
-    display:grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    display:flex;
+    flex-direction: column;
+    min-width: 15%;
 }
 .pbox{
     border-bottom-style:solid;
     border-bottom-color:black;
     border-bottom-width:3px;
-    display:grid;
-    grid-template-columns: 1fr 2fr;
+    display:flex;
 }
 .pbox1{
     border:0;
-    display:grid;
-    grid-template-columns: 1fr 2fr;
+    display:flex;
 }
 .data{
     text-align: center;
     font-size:1.25rem;
     margin:0;
-    margin-top:1.25rem;
 }
 .data-buton{
     margin:0 auto;
@@ -114,7 +111,6 @@
     font-weight:600;
     margin-bottom:0;
     font-size:1rem;
-    margin-top:1.313rem;
 }
 .oracursa{
     margin-top:0;
@@ -124,13 +120,21 @@
     cursor:pointer;
 }
 .text-cursa{
-    margin-left:0.625rem;
-    margin-right:0.625rem;
     font-size:1rem;
     font-weight:500;
 }
 .text-cursa-grid{
     border-left: 3px solid black;
-    display: flex;
-    flex-direction: column;
+}
+
+@media(max-width:1000px){
+    .tara-text{
+        font-size:2rem;
+    }
+    .tara{
+        margin: 0 auto;
+    }
+    .program-cursa{
+        min-width:10%;
+    }
 }
