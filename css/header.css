@@ -17,6 +17,9 @@ body{
     justify-content: center;
     color: red;
 }
+.buton.active{
+    opacity:.8;
+}
 .buton:hover{
     opacity:0.7;
 }

@@ -34,6 +34,18 @@ const fiaBtn = document.querySelector(".fia")
 fiaBtn.addEventListener("click", ()=>{
     window.open("https://www.fia.com")
 })
+
+const currentLink=window.location.href
+const menuItem = document.querySelectorAll(".buton")
+const menuLength = menuItem.length
+for(let i = 0; i<menuLength; i++){
+    if(menuItem[i].href === currentLink){
+        menuItem[i].classList.add("active")
+    }
+    console.log(currentLink)
+}
+
+
 //STIRI
 
 const stangaSus = document.querySelector("#stanga-sus")
