@@ -2,11 +2,13 @@ body{
     overflow-x: hidden;
 }
 .stire{
-    transition:0.15s;
+    transition:200ms;
+    transition: transform 200ms ease-in-out;
 }
 .stire:hover{
     box-shadow:15px 15px 15px black;
     cursor:pointer;
+    transform: scale(1.01);
 }
 .content-grid{
     display:grid;
