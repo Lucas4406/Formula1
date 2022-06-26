@@ -22,3 +22,13 @@ const istorieBtn = document.getElementById("istorie-button")
 istorieBtn.addEventListener("click", ()=>{
     window.location.assign("istorie.html")
 })
+
+const logoBtn = document.querySelector("#logo-button")
+logoBtn.addEventListener("click", ()=>{
+    window.location.assign("index.html")
+})
+
+const fiaBtn = document.querySelector(".fia")
+fiaBtn.addEventListener("click", ()=>{
+    window.open("https://www.fia.com")
+})
