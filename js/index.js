@@ -34,8 +34,6 @@ const fiaBtn = document.querySelector(".fia")
 fiaBtn.addEventListener("click", ()=>{
     window.open("https://www.fia.com")
 })
-
-
 //STIRI
 
 const stangaSus = document.querySelector("#stanga-sus")
