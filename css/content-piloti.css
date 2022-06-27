@@ -52,12 +52,21 @@
 .pozapilot{
     margin-top:0.313rem;
     margin-bottom: 1.25rem;
+    position: relative;
 }
 .numepilot{
     font-weight:600;
-    font-size:1.875rem;
+    font-size:2rem;
     margin-bottom:1.25rem;
     margin-top:1.25rem;
+}
+.numar{
+    background-color: rgb(92, 92, 92);
+    width:30%;
+    position:absolute;
+    border-radius:20px 0 20px 0;
+    top:0;
+    left:0;
 }
 
 @media(max-width:1000px){
@@ -66,5 +75,11 @@
     }
     .box{
         grid-template-rows: 1fr 12fr;
+    }
+    .numar{
+        width:40%;
+    }
+    .numepilot{
+        font-size:2.5rem;
     }
 }
