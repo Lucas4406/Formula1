@@ -12,49 +12,42 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <script src="js/index.js" defer></script>
+        <link rel="stylesheet" href="css/dark-mode.css">
+        <script src="js/dark-mode.js" defer></script>
     </head>
     <body>
         <div class="header">
             <div class="sus">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="poze/f1.png"; class="logo-f1" >
-                    </a>
+                <div class="logo" id="logo-button">
+                    <img src="poze/f1.png" class="logo-f1">
                 </div>
                 <div class="fia">
-                    <a href="https://www.fia.com/" target="_blank">
-                        <img src="poze/imageedit_3_3849553840.png" class="logo-fia">
-                    </a>
+                    <img src="poze/imageedit_3_3849553840.png" class="logo-fia">
                 </div>
             </div>
             <div class="bar">
-                <div class="buton">
-                    <a href="index.html" style="color:red;text-decoration:none">
-                        Știri
-                    </a>
+                <div class="buton" id="stiri-button" title="Spre pagina cu stiri">
+                    Știri
                 </div>
-                <div class="buton">
-                    <a href="program.html" style="color:red;text-decoration:none">
-                        Program
-                    </a>
+                <div class="buton" id="program-button" title="Spre pagina cu program">
+                    Program
                 </div>
-                <div class="buton">
-                    <a href="echipe.html" style="color:red;text-decoration:none">
-                        Echipe
-                    </a>
+                <div class="buton" id="echipe-button" title="Spre pagina cu echipe">
+                    Echipe
                 </div>
-                <div class="buton">
-                    <a href="piloti.html" style="color:red;text-decoration:none">
-                        Piloți
-                    </a>
+                <div class="buton" id="piloti-button" title="Spre pagina cu piloti"> 
+                    Piloți
                 </div>
-                <div class="buton">
-                    <a href="istorie.html" style="color:red;text-decoration:none">
-                        Istorie
-                    </a>
+                <div class="buton" id="istorie-button" title="Spre pagina cu istorie">
+                    Istorie
                 </div>
             </div>
         </div>
+        <button class="darkmodeBtn">
+            <img src="icons/night-mode.png" class="poza1">
+            <img src="icons/brightness.png" class="poza2">
+        </button>
         <div class="stiri">
             <div class="titlu">
                 <div>
@@ -69,61 +62,53 @@
             </div>
         </div>
         <div class="content-grid">
-            <div class="stire">
-                <a href="https://www.formula1.com/en/latest/article.mercedes-current-struggles-no-fun-at-all-says-team-boss-toto-wolff.2kRqsavxPAOd32MMV0HvtR.html" style="text-decoration:none;color:black" target="_blank">
-                    <div class="content-row">
-                        <div class="content-text">
-                            <p class="text">
-                                <strong>Mercedes este in pericol!</strong> Află ce are de spus șeful echipei, Toto Wolff
-                            </p>
-                        </div>
-                        <div class="content-photo">
-                            <img src="poze/merc-w13.jpg" class="photo">
-                        </div>
+            <div class="stire" id="stanga-sus">
+                <div class="content-row">
+                    <div class="content-text">
+                        <p class="text" title="Mercedes este in pericol! Află ce are de spus șeful echipei, Toto Wolff">
+                            <strong>Mercedes este in pericol!</strong> Află ce are de spus șeful echipei, Toto Wolff
+                        </p>
                     </div>
-                </a>
+                    <div class="content-photo">
+                        <img src="poze/merc-w13.jpg" class="photo">
+                    </div>
+                </div>
             </div>
-            <div class="stire">
-                <a href="stire2.html" style="text-decoration:none;color:black">
-                    <div class="content-row">
-                        <div class="content-text">
-                            <p class="text"> 
-                                Binotto <strong>"surprins"</strong> de avantajul pe care îl are echipa - nu aduc imbunatățiri pentru Imola
-                            </p>
-                        </div>
-                        <div class="content-photo">
-                            <img src="poze/ferrari.jpg" class="photo">
-                        </div>
+            <div class="stire" id="dreapta-sus">
+                <div class="content-row">
+                    <div class="content-text">
+                        <p class="text" title="Binotto surprins de avantajul pe care îl are echipa - nu aduc imbunatățiri pentru Imola"> 
+                            Binotto <strong>"surprins"</strong> de avantajul pe care îl are echipa - nu aduc imbunatățiri pentru Imola
+                        </p>
                     </div>
-                </a>
+                    <div class="content-photo">
+                        <img src="poze/ferrari.jpg" class="photo">
+                    </div>
+                </div>
             </div>
-            <div class="stire">
-                <a href="https://www.formula1.com/en/latest/article.power-rankings-whos-up-and-whos-down-after-the-2022-australian-grand-prix.2P3XZqxdI6sognsxhhKZgH.html" style="text-decoration:none;color:black" target="_blank">
-                    <div class="content-row">
-                        <div class="content-text">
-                            <p class="text">
-                                <strong>Power Ranking:</strong> Cine a evoluat și cine nu după Marele Grand-Prix al Australiei?
-                            </p>
-                        </div>
-                        <div class="content-photo">
-                            <img src="poze/rank.jpg" class="photo">
-                        </div>
+            <div class="stire" id="stanga-jos">
+                <div class="content-row">
+                    <div class="content-text">
+                        <p class="text" title="Power Ranking: Cine a evoluat și cine nu după Marele Grand-Prix al Australiei?">
+                            <strong>Power Ranking:</strong> Cine a evoluat și cine nu după Marele Grand-Prix al Australiei?
+                        </p>
                     </div>
-                </a>
+                    <div class="content-photo">
+                        <img src="poze/rank.jpg" class="photo">
+                    </div>
+                </div>
             </div>
-            <div class="stire">
-                <a href="https://www.formula1.com/en/latest/article.palmer-how-albon-pulled-off-a-blinding-strategy-call-to-take-williams-first.4XIMhqWLpO5Kbsk9Jx702X.html" style="text-decoration:none;color:black" target="_blank">
-                    <div class="content-row">
-                        <div class="content-text">
-                            <p class="text">
-                                <strong>Palmer:</strong> Cum a reușit Albon să caștige primele puncte din sezon pentru Williams
-                            </p>
-                        </div>
-                        <div class="content-photo">
-                            <img src="poze/albon.jpg" class="photo">
-                        </div>
+            <div class="stire" id="dreapta-jos">
+                <div class="content-row">
+                    <div class="content-text">
+                        <p class="text" title="Palmer: Cum a reușit Albon să caștige primele puncte din sezon pentru Williams">
+                            <strong>Palmer:</strong> Cum a reușit Albon să caștige primele puncte din sezon pentru Williams
+                        </p>
                     </div>
-                </a>
+                    <div class="content-photo">
+                        <img src="poze/albon.jpg" class="photo">
+                    </div>
+                </div>
             </div>
         </div>
     </body>
