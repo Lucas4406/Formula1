@@ -1,6 +1,9 @@
 body{
     overflow-x: hidden;
 }
+body.dark-mode{
+    background-color: #333;
+}
 .stire{
     transition:200ms;
     transition: transform 200ms ease-in-out;
@@ -17,6 +20,9 @@ body{
     row-gap:1.25rem;
     margin-left:0.625rem;
     margin-right:0.625rem;
+}
+.content-grid.dark-mode{
+    color:white;
 }
 @media(max-width:1380px){
     .content-grid{
@@ -54,6 +60,11 @@ body{
     border-bottom-right-radius: 0;
     border-bottom: 0;
 }
+.content-text.dark-mode{
+    border-color: white;
+    color: white;
+    background-color: rgb(73, 73, 73);
+}
 .content-text:hover{
     box-shadow:15px 15px 15px black;
     cursor:pointer;
@@ -87,4 +98,7 @@ content.row{
 .stiri{
     margin-bottom:1rem;
     margin-top: 1.2%;
+}
+.stiri.dark-mode{
+    color: white;
 }
