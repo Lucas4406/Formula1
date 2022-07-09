@@ -42,7 +42,6 @@ for(let i = 0; i<menuLength; i++){
     if(menuItem[i].href === currentLink){
         menuItem[i].classList.add("active")
     }
-    console.log(currentLink)
 }
 
 
