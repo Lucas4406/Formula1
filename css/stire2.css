@@ -1,31 +1,31 @@
-.content{
-    display:grid;
-    grid-template-rows: 1fr 4fr;
-}
 .titlu{
     font-size:3em;
     font-weight: bold;
     margin-bottom:0;
 }
 .title-div{
-    display:grid;
-    grid-template-columns: 4fr 1fr;
+    display:flex;
+    width: 80vw;
+    margin: 0 auto;
 }
 .title{
-    display:grid;
-    grid-template-rows: 3fr 1fr 1fr;
-    margin-left:100px;
-    margin-right:150px;
+    display:flex;
+    flex-direction: column;
+}
+.butoane{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .unbuton{
     background-color: white;
     color:red;
-    font-size:13px;
+    font-size:0.813rem;
     border:1px solid red;
-    padding:8px;
+    padding:0.5rem;
     border-radius:6px;
     transition: 0.1s;
-    margin-right:6px;
+    margin-right:.3rem;
 }
 .unbuton:hover{
     cursor:pointer;
@@ -60,16 +60,12 @@
 .share{
     display:flex;
     justify-content: flex-start;
-    column-gap: 10px;
+    column-gap: .6rem;
 }
 .text-share{
     display:flex;
     align-items:center;
     color:#949498;
-}
-.gol{
-    display:flex;
-    align-items: flex-end;
 }
 .btn1:hover{
     background-color:#2b4d97;
@@ -82,58 +78,60 @@
     cursor:pointer;
 }
 .data{
-    font-weight:100px;
-    margin-top:30px;
+    font-weight:400;
+    margin-top:2rem;
     margin-bottom: 0;
 }
 .pozastiri{
     display:flex;
-    column-gap: 30px;
+    flex-direction: row;
+    margin: 0 auto;
+    width:80vw;
+    gap:2rem;
 }
 .poza{
+    display: flex;
     border:15px solid #e10600;
     border-bottom:0;
     border-left:0;
     border-radius:0 20px 0 0;  
-    width:60%;
-    margin-left:100px;
-    height:auto;
+    max-width:68.75rem;
 }
 .poza-stire{
-    height:100%;
     width: 100%;
+    object-fit: cover;
 }
 .restul-div{
-    margin-top:30px;
+    margin-top:2rem;
 }
 .altestiri{
-    display:grid;
-    grid-template-rows: 1fr 7fr;
-    row-gap:10px;
+    display:flex;
+    row-gap:0.625rem;
+    flex-direction: column;
 }
 .ultimele{
     border:2px solid #d0d0d2;
     border-bottom:0;
     border-left:0;
     display:flex;
-    font-size: 30px;
+    font-size: 1.875rem;
     border-radius: 0 20px;
-    padding-right: 10px;
+    padding-right: 0.625rem;
+    padding-top: 0.625rem;
     align-items: center;
-    width:300px;
     font-weight: 600;
 }
 .stire-cont{
-    display:grid;
-    grid-template-rows:repeat(5,1fr);
-    row-gap:10px;
+    display:flex;
+    flex-direction: column;
+    gap:.8rem;
 }
 .stire{
     border-bottom: 1px solid #d0d0d2;
     transition: border-bottom 50ms;
-    display:grid;
-    grid-template-rows:1fr 4fr;
-    width:300px;
+    display:flex;
+    flex-direction: column;
+    max-width: 300px;
 }
 .stire:hover{
     border-bottom:1px solid #e10600;
@@ -141,12 +139,12 @@
 .news{
     font-size: 15px;
     color:red;
-    padding-left:15px;
     font-weight:600;
 }
 .stire-scris{
-    padding-right:50px;
-    padding-left:15px;
+    padding-right:2.5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 .stire-scris a{
     text-decoration:none;
@@ -158,23 +156,23 @@
 }
 .scris-container{
     display:flex;
-    gap: 50px;
+    gap: 3.125rem;
 }
 .primul-text{
     font-weight: 700;
-    font-size: 20px;
-    margin-top:50px;
+    font-size: 1.25rem;
+    margin-top:3.125rem;
     margin-left:200px;
     margin-right:100px;
 }
 .doilea-text{
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-left:200px;
     margin-right:100px;
 }
 .link-text{
     color:red;
-    font-size:22px;
+    font-size:1.3rem;
     margin-left:200px;
     margin-right:100px;
     text-decoration: none;
@@ -184,4 +182,40 @@
 }
 .link-container{
     display:flex;
+}
+
+
+@media(max-width:1200px){
+    .pozastiri{
+        flex-direction: column;
+    }
+    .altestiri{
+        display:none;
+    }
+    .scris{
+        display:flex;
+        width:90vw;
+        margin: 0 auto;
+    }
+    .primul-text{
+        font-size: 1.5rem;
+        margin-left:0;
+        margin-right:0;
+    }
+    .doilea-text{
+        font-size: 1.5rem;
+        margin-left:0;
+        margin-right:0;
+    }
+    .link-text{
+        font-size:2rem;
+        margin-left:0;
+        margin-right:0;
+    }
+    .title-div{
+        width: 90vw;
+    }
+    .pozastiri{
+        width:90vw;
+    }
 }
