@@ -10,7 +10,6 @@ darkmodeBtn.addEventListener("click" , () =>{
     for (var i = 0; i < contText.length; i++) {
         contText[i].classList.toggle("dark-mode")
     }
-    console.log(contText.length);
     poza1.classList.toggle("dark-mode")
     poza2.classList.toggle("dark-mode")
 })
