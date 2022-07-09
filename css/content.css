@@ -61,7 +61,7 @@ body.dark-mode{
     border-bottom: 0;
 }
 .content-text.dark-mode{
-    border-color: white;
+    border-color: rgb(200, 200, 200);
     color: white;
     background-color: rgb(73, 73, 73);
 }
