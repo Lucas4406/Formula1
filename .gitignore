@@ -1,3 +1,4 @@
-**/lib/workspace.code-workspace.file
-**/lib/backup.html
-**/lib/buttons.html
+/workspace.code-workspace.file
+/backup.html
+/buttons.html
+/audio
