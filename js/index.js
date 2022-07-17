@@ -7,22 +7,22 @@ stiriBtn.addEventListener("click", ()=>{
 
 const programBtn = document.getElementById("program-button")
 programBtn.addEventListener("click", ()=>{
-    window.location.assign("program.html")
+    window.location.assign("pagini/program.html")
 })
 
 const echipeBtn = document.getElementById("echipe-button")
 echipeBtn.addEventListener("click", ()=>{
-    window.location.assign("echipe.html")
+    window.location.assign("pagini/echipe.html")
 })
 
 const pilotiBtn = document.getElementById("piloti-button")
 pilotiBtn.addEventListener("click", ()=>{
-    window.location.assign("piloti.html")
+    window.location.assign("pagini/piloti.html")
 })
 
 const istorieBtn = document.getElementById("istorie-button")
 istorieBtn.addEventListener("click", ()=>{
-    window.location.assign("istorie.html")
+    window.location.assign("pagini/istorie.html")
 })
 
 const logoBtn = document.querySelector("#logo-button")
@@ -54,7 +54,7 @@ stangaSus.addEventListener("click", ()=>{
 
 const dreaptaSus = document.querySelector("#dreapta-sus")
 dreaptaSus.addEventListener("click", ()=>{
-    window.location.assign("stire2.html")
+    window.location.assign("stiri/stire2.html")
 })
 
 const stangaJos = document.querySelector("#stanga-jos")
