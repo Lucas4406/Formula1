@@ -1,0 +1,58 @@
+let darkMode = localStorage.getItem("darkMode")
+const body = document.querySelector("body")
+const darkmodeBtn = document.querySelector(".darkmodeBtn")
+const poza2 = document.querySelector(".poza2")
+const poza1 = document.querySelector(".poza1")
+const boxFe = document.querySelector(".box-fe")
+const boxMe = document.querySelector(".box-me")
+const boxRe = document.querySelector(".box-re")
+const boxMc = document.querySelector(".box-mc")
+const boxAl = document.querySelector(".box-al")
+const boxHa = document.querySelector(".box-ha")
+const boxWi = document.querySelector(".box-wi")
+const boxAm = document.querySelector(".box-am")
+const boxAt = document.querySelector(".box-at")
+const boxAf = document.querySelector(".box-af")
+const enableDarkMode =() =>{
+    body.classList.add("dark-mode")
+    poza1.classList.add("dark-mode")
+    poza2.classList.add("dark-mode")
+    boxFe.classList.add("dark-mode")
+    boxMe.classList.add("dark-mode")
+    boxRe.classList.add("dark-mode")
+    boxMc.classList.add("dark-mode")
+    boxAl.classList.add("dark-mode")
+    boxHa.classList.add("dark-mode")
+    boxWi.classList.add("dark-mode")
+    boxAm.classList.add("dark-mode")
+    boxAt.classList.add("dark-mode")
+    boxAf.classList.add("dark-mode")
+    localStorage.setItem("darkMode" , "enabled")
+}
+const disableDarkMode =() =>{
+    body.classList.remove("dark-mode")
+    poza1.classList.remove("dark-mode")
+    poza2.classList.remove("dark-mode")
+    boxFe.classList.remove("dark-mode")
+    boxMe.classList.remove("dark-mode")
+    boxRe.classList.remove("dark-mode")
+    boxMc.classList.remove("dark-mode")
+    boxAl.classList.remove("dark-mode")
+    boxHa.classList.remove("dark-mode")
+    boxWi.classList.remove("dark-mode")
+    boxAm.classList.remove("dark-mode")
+    boxAt.classList.remove("dark-mode")
+    boxAf.classList.remove("dark-mode")
+    localStorage.removeItem("darkMode" , "enabled")
+}
+if(darkMode === "enabled"){
+    enableDarkMode()
+}
+darkmodeBtn.addEventListener("click" , () => {
+    darkMode = localStorage.getItem("darkMode")
+    if(darkMode !== "enabled"){
+        enableDarkMode()
+    } else{
+        disableDarkMode()
+    }
+})
