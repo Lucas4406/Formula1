@@ -8,12 +8,30 @@
     border-radius:12px;
     transition:0.20s;
 }
+.box-fe.dark-mode,
+.box-me.dark-mode,
+.box-re.dark-mode,
+.box-mc.dark-mode,
+.box-al.dark-mode,
+.box-ha.dark-mode,
+.box-wi.dark-mode,
+.box-am.dark-mode,
+.box-at.dark-mode,
+.box-af.dark-mode{
+    border-color: white;
+    background-color: #333;
+    color:white;
+}
+
 .box-fe:hover{
     box-shadow:15px 15px 15px #F91536;
     cursor:pointer;
     border:3px solid #F91536;
     border-left:0;
     border-bottom:0;
+}
+.box-fe:hover .linie{
+    color:#F91536;
 }
 .box-me:hover{
     box-shadow:15px 15px 15px #6CD3BF;
@@ -22,12 +40,18 @@
     border-left:0;
     border-bottom:0;
 }
+.box-me:hover .linie{
+    color:#6CD3BF;
+}
 .box-re:hover{
     box-shadow:15px 15px 15px #3671C6;
     cursor:pointer;
     border:3px solid #3671C6;
     border-left:0;
     border-bottom:0;
+}
+.box-re:hover .linie{
+    color:#3671C6;
 }
 .box-mc:hover{
     box-shadow:15px 15px 15px #F58020;
@@ -36,12 +60,18 @@
     border-left:0;
     border-bottom:0;
 }
+.box-mc:hover .linie{
+    color:#F58020;
+}
 .box-al:hover{
     box-shadow:15px 15px 15px #2293D1;
     cursor:pointer;
     border:3px solid #2293D1;
     border-left:0;
     border-bottom:0;
+}
+.box-al:hover .linie{
+    color:#2293D1;
 }
 .box-af:hover{
     box-shadow:15px 15px 15px #C92D4B;
@@ -50,12 +80,18 @@
     border-left:0;
     border-bottom:0;
 }
+.box-af:hover .linie{
+    color:#C92D4B;
+}
 .box-ha:hover{
     box-shadow:15px 15px 15px #B6BABD;
     cursor:pointer;
     border:3px solid #B6BABD;
     border-left:0;
     border-bottom:0;
+}
+.box-ha:hover .linie{
+    color:#B6BABD;
 }
 .box-at:hover{
     box-shadow:15px 15px 15px #5E8FAA;
@@ -64,6 +100,9 @@
     border-left:0;
     border-bottom:0;
 }
+.box-at:hover .linie{
+    color:#5E8FAA;
+}
 .box-wi:hover{
     box-shadow:15px 15px 15px #37BEDD;
     cursor:pointer;
@@ -71,12 +110,18 @@
     border-left:0;
     border-bottom:0;
 }
+.box-wi:hover .linie{
+    color:#37BEDD;
+}
 .box-am:hover{
     box-shadow:15px 15px 15px #358C75;
     cursor:pointer;
     border:3px solid #358C75;
     border-left:0;
     border-bottom:0;
+}
+.box-am:hover .linie{
+    color:#358C75;
 }
 .content{
     display:grid;
