@@ -149,7 +149,10 @@
     font-size:2.5rem;
     font-weight: 600;
 }
-
+.content > a{
+    text-decoration: none;
+    color:black;
+}
 
 @media(max-width:1200px){
     .content{
