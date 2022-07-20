@@ -13,6 +13,7 @@ fetch("/json/piloti.json")
     response.json()
 )
 .then(data => {
+    //Charles
     textEchipa[0].innerText =" " +  data.Charles[0].Echipa
     textTara[0].innerText=" " + data.Charles[0].Tara
     textPodium[0].innerText=" " + data.Charles[0].Podium
@@ -23,5 +24,16 @@ fetch("/json/piloti.json")
     textClQuali[0].innerText=" " + data.Charles[0].ClQuali
     textData[0].innerText=" " + data.Charles[0].Data
     textLoc[0].innerText=" " + data.Charles[0].Loc
+    //Carlos
+    textEchipa[1].innerText =" " +  data.Carlos[0].Echipa
+    textTara[1].innerText=" " + data.Carlos[0].Tara
+    textPodium[1].innerText=" " + data.Carlos[0].Podium
+    textPuncte[1].innerText=" " + data.Carlos[0].Puncte
+    textGp[1].innerText=" " + data.Carlos[0].Gp
+    textCampionate[1].innerText=" " + data.Carlos[0].Campionate
+    textClCursa[1].innerText=" " + data.Carlos[0].ClCursa
+    textClQuali[1].innerText=" " + data.Carlos[0].ClQuali
+    textData[1].innerText=" " + data.Carlos[0].Data
+    textLoc[1].innerText=" " + data.Carlos[0].Loc
 }
 );
