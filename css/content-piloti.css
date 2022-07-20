@@ -1,6 +1,6 @@
 .content{
     display:grid;
-    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:repeat(10, 1fr);
     row-gap:1.25rem;
     margin-left:0.625rem;
     margin-right:0.625rem;
@@ -12,8 +12,13 @@
     border-radius:6px;
     transition:0.15s;
 }
+.box.dark-mode{
+    border-color: black;
+    color:white;
+    background-color: #333;
+}
 .box:hover{
-    box-shadow:15px 15px 15px black;
+    box-shadow:15px 15px 15px rgb(71, 71, 71);
 }
 .piloti{
     display:grid;
@@ -54,11 +59,12 @@
     margin-bottom: 1.25rem;
     position: relative;
 }
+
 .numepilot{
     font-weight:600;
     font-size:2rem;
     margin-bottom:1.25rem;
-    margin-top:1.25rem;
+    margin-top:10px;
 }
 .numar{
     background-color: rgb(92, 92, 92);
@@ -68,10 +74,14 @@
     top:0;
     left:0;
 }
-
+.nume-echipa span{
+    margin: 0;
+    padding: 0;
+}
 @media(max-width:1000px){
     .piloti{
         grid-template-columns:1fr;
+        row-gap: .7rem;
     }
     .box{
         grid-template-rows: 1fr 12fr;
@@ -81,5 +91,8 @@
     }
     .numepilot{
         font-size:2.5rem;
+    }
+    .nume-echipa{
+        font-size: 3.5rem;
     }
 }
