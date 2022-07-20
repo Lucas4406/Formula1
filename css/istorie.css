@@ -1,7 +1,6 @@
 .content{
     display:grid;
     grid-template-columns: 4fr 1fr;
-    margin-top:0.5rem;
     column-gap: 2rem;
     margin-right:0.625rem;
     height: 100vh;
@@ -34,6 +33,10 @@
     padding-right:0.313rem;
     margin-top:0;
 }
+.multscris.dark-mode{
+    border-color: white;
+    color:white;
+}
 .text{
     margin-left:0.625rem;
 }
@@ -41,6 +44,9 @@
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.imagini.dark-mode{
+    color: white;
 }
 @media(max-width:1000px){
     .content{
