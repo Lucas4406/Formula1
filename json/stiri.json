@@ -4,6 +4,12 @@
             "titlu": "Mercedes este in pericol! Află ce are de spus șeful echipei, Toto Wolff",
             "link": "https://www.formula1.com/en/latest/article.mercedes-current-struggles-no-fun-at-all-says-team-boss-toto-wolff.2kRqsavxPAOd32MMV0HvtR.html",
             "poza": "poze/merc-w13.jpg",
+            "data": "14 Aprile 2022"
+        },
+        {
+            "titlu": "Binotto, \"surprins\" de avansul Ferrari la începutul sezonului - dar nu plănuiește mari modernizări pentru Imola",
+            "link": "stiri/stire2.html",
+            "poza": "poze/ferrari.jpg",
             "data": "14 Aprile 2022",
             "buton": [
                 "Australia",
@@ -55,12 +61,6 @@
             ],
             "partea7": "\"Dacă ne uităm la noi înșine, nu vor fi [multe upgrade-uri] la Imola, pentru că nu va fi locul potrivit. Am încercat să atenuăm, ca să spun așa, problema pe care o avem încă până acum - porpoising-ul și ricoșeul - care ne-a afectat performanța în weekend, așa că încercăm să lucrăm la acest punct specific.\"",
             "partea8": "\"Dar, despre modernizări, cele mai importante vor fi mai târziu în sezon.\""
-        },
-        {
-            "titlu": "Binotto, \"surprins\" de avansul Ferrari la începutul sezonului - dar nu plănuiește mari modernizări pentru Imola",
-            "link": "stiri/stire2.html",
-            "poza": "poze/ferrari.jpg",
-            "data": "14 Aprile 2022"
         },
         {
             "titlu": "Power Ranking: Cine a evoluat și cine nu după Marele Grand-Prix al Australiei?",

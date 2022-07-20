@@ -1,6 +1,6 @@
 let darkMode = localStorage.getItem("darkMode")
 const body = document.querySelector("body")
-const titlu = document.querySelector(".titlu")
+const titluDark = document.querySelector(".titlu")
 const data = document.querySelector(".data")
 const butoane = document.querySelectorAll(".unbuton")
 const alteStiri = document.querySelector(".altestiri")
@@ -12,7 +12,7 @@ const poza2 = document.querySelector(".poza2")
 const poza1 = document.querySelector(".poza1")
 const enableDarkMode =() =>{
     body.classList.add("dark-mode")
-    titlu.classList.add("dark-mode")
+    titluDark.classList.add("dark-mode")
     data.classList.add("dark-mode")
     alteStiri.classList.add("dark-mode")
     poza1.classList.add("dark-mode")
@@ -33,7 +33,7 @@ const enableDarkMode =() =>{
 }
 const disableDarkMode =() =>{
     body.classList.remove("dark-mode")
-    titlu.classList.remove("dark-mode")
+    titluDark.classList.remove("dark-mode")
     data.classList.remove("dark-mode")
     alteStiri.classList.remove("dark-mode")
     poza1.classList.remove("dark-mode")
