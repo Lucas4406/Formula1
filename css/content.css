@@ -8,6 +8,7 @@ body.dark-mode{
     transition:200ms;
     transition: transform 200ms ease-in-out;
     overflow: hidden;
+    z-index: 20;
 }
 .photo{
     width:100%;
@@ -20,7 +21,7 @@ body.dark-mode{
     transform: scale(1.01);
 }
 .stire:hover .photo{
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 .content-grid{
     display:grid;
@@ -47,6 +48,9 @@ body.dark-mode{
     margin-top:0;
     padding-top: 1.25rem;
 }
+.photo{
+    z-index:-1;
+}
 .content-photo{
     background-color:black;
     transition: 0.15s;
@@ -66,6 +70,10 @@ body.dark-mode{
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom: 0;
+    z-index:20;
+}
+.content-row{
+    z-index:22;
 }
 .content-text.dark-mode{
     border-color: white;
