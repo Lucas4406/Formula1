@@ -1,13 +1,28 @@
 {
     "Stiri": [
         {
-            "titlu": "Binotto, \"surprins\" de avansul Ferrari la începutul sezonului - dar nu plănuiește mari modernizări pentru Imola",
-            "link": "stiri/stire2.html",
+            "titlu": "Mercedes este in pericol! Află ce are de spus șeful echipei, Toto Wolff",
+            "link": "https://www.formula1.com/en/latest/article.mercedes-current-struggles-no-fun-at-all-says-team-boss-toto-wolff.2kRqsavxPAOd32MMV0HvtR.html",
             "poza": "poze/merc-w13.jpg",
             "data": "14 Aprile 2022"
         },
         {
-            "titlu": "Mercedes este in pericol! Echipa se va duce in jos daca Max nu o baga in perete!"
+            "titlu": "Binotto, \"surprins\" de avansul Ferrari la începutul sezonului - dar nu plănuiește mari modernizări pentru Imola",
+            "link": "stiri/stire2.html",
+            "poza": "poze/ferrari.jpg",
+            "data": "14 Aprile 2022"
+        },
+        {
+            "titlu": "Power Ranking: Cine a evoluat și cine nu după Marele Grand-Prix al Australiei?",
+            "link": "https://www.formula1.com/en/latest/article.power-rankings-whos-up-and-whos-down-after-the-2022-australian-grand-prix.2P3XZqxdI6sognsxhhKZgH.html",
+            "poza": "poze/rank.jpg",
+            "data": "14 Aprile 2022"
+        },
+        {
+            "titlu": "Palmer: Cum a reușit Albon să caștige primele puncte din sezon pentru Williams",
+            "link": "https://www.formula1.com/en/latest/article.palmer-how-albon-pulled-off-a-blinding-strategy-call-to-take-williams-first.4XIMhqWLpO5Kbsk9Jx702X.html",
+            "poza": "poze/albon.jpg",
+            "data": "14 Aprile 2022"
         }
     ]
 }

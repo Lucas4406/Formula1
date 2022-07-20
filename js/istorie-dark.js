@@ -1,6 +1,7 @@
 let darkMode = localStorage.getItem("darkMode")
 const body = document.querySelector("body")
 const darkmodeBtn = document.querySelector(".darkmodeBtn")
+const subtitlu = document.querySelectorAll(".subtitlu")
 const poza2 = document.querySelector(".poza2")
 const poza1 = document.querySelector(".poza1")
 const multscris = document.querySelectorAll(".multscris")
@@ -13,6 +14,9 @@ const enableDarkMode =() =>{
     for(i=0;i<multscris.length;i++){
         multscris[i].classList.add("dark-mode")
     }
+    for(i=0;i<subtitlu.length;i++){
+        subtitlu[i].classList.add("dark-mode")
+    }
     localStorage.setItem("darkMode" , "enabled")
 }
 const disableDarkMode =() =>{
@@ -22,6 +26,9 @@ const disableDarkMode =() =>{
     imagini.classList.add("dark-mode")
     for(i=0;i<multscris.length;i++){
         multscris[i].classList.remove("dark-mode")
+    }
+    for(i=0;i<subtitlu.length;i++){
+        subtitlu[i].classList.remove("dark-mode")
     }
     localStorage.setItem("darkMode" , "enabled")
     localStorage.removeItem("darkMode" , "enabled")

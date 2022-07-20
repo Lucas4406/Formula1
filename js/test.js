@@ -5,12 +5,22 @@ fetch("/json/stiri.json")
     response.json()
 )
 .then(data => {
-        const card = template.content.cloneNode(true).children[0]
-        const stireText = card.querySelector("#stiretext")
-        const linkTag = card.querySelector("#template a")
-        const pozaStire = card.querySelector("#stirephoto")
-        stireText.textContent = data.Stiri[0].titlu
-        pozaStire.src = `${data.Stiri[0].poza}`
-        console.log(`${data.Stiri[0].link}`);
-        contentGrid.append(card)
+    const card = template.content.cloneNode(true).children[0]
+    const stireText = card.querySelector("#stiretext")
+    const pozaStire = card.querySelector("#stirephoto")
+    for(var i=0;i<data.Stiri.length;i++){
+            var newCard = document.createElement("a")
+            stireText.textContent = data.Stiri[i].titlu
+            pozaStire.src = `${data.Stiri[i].poza}`
+            newCard.href=data.Stiri[i].link
+            newCard.classList.add("ltag")
+            newCard.innerHTML = card.innerHTML
+            contentGrid.appendChild(newCard)
+            darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
+    }
 })
