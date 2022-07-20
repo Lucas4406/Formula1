@@ -7,11 +7,20 @@ body.dark-mode{
 .stire{
     transition:200ms;
     transition: transform 200ms ease-in-out;
+    overflow: hidden;
+}
+.photo{
+    width:100%;
+    overflow: hidden;
+    transition: transform 200ms ease-in-out;
 }
 .stire:hover{
     box-shadow:15px 15px 15px black;
     cursor:pointer;
     transform: scale(1.01);
+}
+.stire:hover .photo{
+    transform: scale(1.02);
 }
 .content-grid{
     display:grid;
@@ -29,9 +38,7 @@ body.dark-mode{
         grid-template-columns: 1fr;
     }
 }
-.photo{
-    width:100%;
-}
+
 .text{
     font-size:2rem;
     padding-left:0.313rem;
