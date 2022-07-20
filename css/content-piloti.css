@@ -78,6 +78,10 @@
     margin: 0;
     padding: 0;
 }
+.info > span{
+    margin:0;
+    padding:0;
+}
 @media(max-width:1000px){
     .piloti{
         grid-template-columns:1fr;
