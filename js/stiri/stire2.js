@@ -22,27 +22,25 @@ fetch("/json/stiri.json")
     facebookBtn.href = data.Stiri[1].facebook
     twitterBtn.href = data.Stiri[1].twitter
     pozaStire.src = data.Stiri[1].poza
-    for(var i=0;i<data.Stiri[1].sdr1.length;i++){
-        tipStire[0].textContent = data.Stiri[1].sdr1[0]
-        stireLink[0].href = data.Stiri[1].sdr1[i]
-        stireLink[0].innerHTML = data.Stiri[1].sdr1[i]
+    tipStire[0].textContent = data.Stiri[1].sdr1[0]
+    stireLink[0].href = data.Stiri[1].sdr1[1]
+    stireLink[0].innerHTML = data.Stiri[1].sdr1[2]
 
-        tipStire[1].textContent = data.Stiri[1].sdr2[0]
-        stireLink[1].href = data.Stiri[1].sdr2[i]
-        stireLink[1].innerHTML = data.Stiri[1].sdr2[i]
+    tipStire[1].textContent = data.Stiri[1].sdr2[0]
+    stireLink[1].href = data.Stiri[1].sdr2[1]
+    stireLink[1].innerHTML = data.Stiri[1].sdr2[2]
 
-        tipStire[2].textContent = data.Stiri[1].sdr3[0]
-        stireLink[2].href = data.Stiri[1].sdr3[i]
-        stireLink[2].innerHTML = data.Stiri[1].sdr3[i]
+    tipStire[2].textContent = data.Stiri[1].sdr3[0]
+    stireLink[2].href = data.Stiri[1].sdr3[1]
+    stireLink[2].innerHTML = data.Stiri[1].sdr3[2]
 
-        tipStire[3].textContent = data.Stiri[1].sdr4[0]
-        stireLink[3].href = data.Stiri[1].sdr4[i]
-        stireLink[3].textContent = data.Stiri[1].sdr4[i]
+    tipStire[3].textContent = data.Stiri[1].sdr4[0]
+    stireLink[3].href = data.Stiri[1].sdr4[1]
+    stireLink[3].textContent = data.Stiri[1].sdr4[2]
 
-        tipStire[4].textContent = data.Stiri[1].sdr5[0]
-        stireLink[4].href = data.Stiri[1].sdr5[i]
-        stireLink[4].textContent = data.Stiri[1].sdr5[i]
-    }
+    tipStire[4].textContent = data.Stiri[1].sdr5[0]
+    stireLink[4].href = data.Stiri[1].sdr5[1]
+    stireLink[4].textContent = data.Stiri[1].sdr5[2]
     for(var i=0;i<textCont.length;i++){
         textCont[i].textContent = data.Stiri[1].textcont[i]
     }
