@@ -1,22 +1,72 @@
 {
     "Stiri": [
         {
-            "titlu": "Mercedes este in pericol! Află ce are de spus șeful echipei, Toto Wolff",
-            "link": "https://www.formula1.com/en/latest/article.mercedes-current-struggles-no-fun-at-all-says-team-boss-toto-wolff.2kRqsavxPAOd32MMV0HvtR.html",
-            "poza": "/poze/merc-w13.jpg",
-            "data": "14 Aprile 2022"
+            "titlu": "Russell admite că \"există multe așteptări\" de la Mercedes, care aduce mai multe îmbunătățiri în Franța",
+            "link": "/stiri/stire1.html",
+            "poza": "https://www.formula1.com/content/dam/fom-website/manual/Russell%20-%20France.jpg.transform/9col/image.jpg",
+            "data": "21 iulie 2022",
+            "buton": [
+                "FRANȚA",
+                "RUSSELL",
+                "MERCEDES",
+                "CAR UPGRADES"
+            ],
+            "facebook": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.formula1.com%2Fen%2Flatest%2Farticle.russell-admits-there-is-a-lot-of-expectation-on-mercedes-as-they-bring-more.2NsEWFg4ZlqO6oy8Lgiktu.html",
+            "twitter": "https://twitter.com/intent/tweet?text=Russell%20admits%20%27there%20is%20a%20lot%20of%20expectation%27%20on%20Mercedes%20as%20they%20bring%20more%20upgrades%20to%20France&url=https://www.formula1.com/en/latest/article.russell-admits-there-is-a-lot-of-expectation-on-mercedes-as-they-bring-more.2NsEWFg4ZlqO6oy8Lgiktu.html",
+            "sdr1": [
+                "Știre",
+                "/stiri/stire2.html",
+                "Binotto, \"surprins\" de avansul Ferrari la începutul sezonului - dar nu plănuiește mari modernizări pentru Imola"
+            ],
+            "sdr2": [
+                "Știre",
+                "https://www.formula1.com/en/latest/article.ferrari-evaluating-taking-penalty-with-new-engine-for-sainz-in-french-gp.25v1ldS2OSWuSL2X8dzkIw.html",
+                "Ferrari evaluează luarea unei penalizări cu motor nou pentru Sainz în GP-ul Franței"
+            ],
+            "sdr3": [
+                "Știre",
+                "https://www.formula1.com/en/latest/article.vettel-says-he-has-clear-intention-to-stay-in-f1-beyond-2022-season.2c8MYyhDE7D9XCcg6IUVGM.html",
+                "Vettel spune că are \"intenția clară\" de a rămâne în F1 și după sezonul 2022"
+            ],
+            "sdr4": [
+                "Știre",
+                "https://www.formula1.com/en/latest/article.bottas-says-reliability-fixes-the-1-priority-for-alfa-romeo-and-reveals.6Wez2JaqUxJWXXa6V6oqb7.html",
+                "Bottas spune că rezolvarea problemelor de fiabilitate este \"prioritatea numărul 1\" pentru Alfa Romeo"
+            ],
+            "sdr5": [
+                "Feature",
+                "https://www.formula1.com/en/latest/article.form-guide-can-ferrari-continue-their-run-of-form-in-france.1PW0TFeHm9NmK0T4k08uIK.html",
+                "GHID DE FORMĂ: Poate Ferrari să-și continue seria de curse bune în Franța?"
+            ],
+            "textcont": [
+                "Mulți se așteaptă ca circuitul Paul Ricard să fie pe placul celor de la Mercedes, care, potrivit lui George Russell, au adus ultimele îmbunătățiri la Marele Premiu al Franței din acest weekend...",
+                "O serie de modernizări recente nu numai că au propulsat Mercedes în fruntea plutonului intermediar, dar l-au văzut pe Lewis Hamilton obținând trei podiumuri consecutive și pe Russell terminând în primele cinci locuri în toate cursele din acest sezon, cu excepția unei singure curse. Cu toate acestea, campionii constructorilor rămân fără victorie la intrarea în runda a 12-a.",
+                "\"Există o mulțime de așteptări față de Mercedes în acest weekend - nu sunt prea sigur de unde vin acestea\", a declarat Russell joi. \"Dar cu siguranță ne îmbunătățim mașina și reducem decalajul [față de Ferrari și Red Bull]\".",
+                "\"Va fi cald, ceea ce cred că ne va favoriza ușor din nou. Da, vom încerca să ne impunem, dar, în mod realist, dacă facem totul perfect, cred că vom fi cu o zecime, două zecimi în spatele Ferrari și Red Bull.\"",
+                "Russell a recunoscut că echipa aduce mai multe \"mici îmbunătățiri\" la W13, iar modificările au fost deja observate la nivelul nasului mașinii. Dar, deși Russell a minimalizat ușor așteptările, a ținut să sublinieze progresele pe care echipa sa le-a făcut în găsirea performanțelor.",
+                "\"Cred că este pentru prima dată în acest sezon când înțelegem cu adevărat mașina și înțelegem ce trebuie schimbat pentru a o face să meargă mai repede. În timp ce am petrecut atât de mult timp încercând să înțelegem care sunt problemele, cum să le rezolvăm și nu neapărat să facem mașina să meargă mai repede.\"",
+                "În sesiunea FP1 de vineri, Nyck De Vries va urca la volan în locul lui Hamilton, Mercedes aflându-se la 66 de puncte în spatele celor de la Ferrari, care caută a treia victorie consecutivă în acest weekend."
+            ],
+            "link1": [
+                "https://www.formula1.com/en/latest/article.form-guide-can-ferrari-continue-their-run-of-form-in-france.1PW0TFeHm9NmK0T4k08uIK.html",
+                "GHID DE FORMĂ: Poate Ferrari să-și continue seria de curse bune în Franța?"
+            ],
+            "link2": [
+                "https://www.formula1.com/en/latest/article.our-writers-share-their-defining-memories-of-lewis-hamilton-ahead-of-the.5qvT898sYDSYtLsG6XkBdz.html",
+                "CITEȘTE MAI MULT: Scriitorii noștri își împărtășesc amintirile definitorii despre Lewis Hamilton, înainte de cel de-al 300-lea Mare Premiu al septuplului campion"
+            ]
         },
         {
             "titlu": "Binotto, \"surprins\" de avansul Ferrari la începutul sezonului - dar nu plănuiește mari modernizări pentru Imola",
             "link": "stiri/stire2.html",
-            "poza": "/poze/ferrari.jpg",
+            "poza": "/poze/sbinotto.jpg",
             "data": "14 Aprile 2022",
             "buton": [
-                "Australia",
-                "Emilia Romagna",
-                "Ferrari",
-                "Sainz",
-                "Leclerc"
+                "AUSTRALIA",
+                "EMILIA ROMAGNA",
+                "FERRARI",
+                "SAINZ",
+                "LECLERC"
             ],
             "facebook": "https://www.facebook.com/sharer/sharer.php?u=https://www.formula1.com/en/latest/article.binotto-surprised-by-ferraris-early-season-lead-but-no-big-upgrades-planned.7NaZdsv78HLxwuU01crAO.html",
             "twitter": "https://twitter.com/intent/tweet?text=&amp;url=https://www.formula1.com/en/latest/article.binotto-surprised-by-ferraris-early-season-lead-but-no-big-upgrades-planned.7NaZdsv78HLxwuU01crAO.html",
