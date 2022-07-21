@@ -17,9 +17,7 @@ fetch("/json/stiri.json")
     titlu.textContent = data.Stiri[1].titlu
     dataText.textContent = data.Stiri[1].data
     for(var i=0;i<butonText.length;i++){
-        for(var j=0;j<data.Stiri[1].buton.length;j++){
-            butonText[i].textContent = data.Stiri[1].buton[j]
-        }
+        butonText[i].textContent = data.Stiri[1].buton[i]
     }
     facebookBtn.href = data.Stiri[1].facebook
     twitterBtn.href = data.Stiri[1].twitter
