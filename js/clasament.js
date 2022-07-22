@@ -20,11 +20,11 @@ fetch("http://ergast.com/api/f1/current/constructorStandings.json")
         newConstructor.innerHTML = cardTemplate.innerHTML
         contentContainer.appendChild(newConstructor)
         console.log(result.MRData.StandingsTable.StandingsLists[0].ConstructorStandings[i].Constructor.name)
-    }
-    darkMode = localStorage.getItem("darkMode")
-    if(darkMode !== "enabled"){
-        enableDarkMode()
-    } else{
-        disableDarkMode()
+        darkMode = localStorage.getItem("darkMode")
+        if(darkMode !== "enabled"){
+            enableDarkMode()
+        } else{
+            disableDarkMode()
+        }
     }
 })
