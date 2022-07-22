@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="/css/content.css">
         <link rel="stylesheet" href="/css/content-piloti.css">
         <link rel="stylesheet" href="/css/dark-mode.css">
-        <script src="/js/piloti-dark.js" defer></script>
+        <script src="/js/dark-mode/piloti-dark.js" defer></script>
         <script src="/js/piloti/piloti.js" defer></script>
         <link rel="SHORTCUT ICON" href="/poze/logo-f1.ico" type="image/x-icon"/>
         <link rel="ICON" href="/poze/logo-f1.ico" type="image/ico"/>
@@ -48,8 +48,8 @@
                     </a>
                 </div>
                 <div class="buton">
-                    <a href="/pagini/piloti.html" style="color:red;text-decoration:none">
-                        Piloți
+                    <a href="/pagini/clasament.html" style="color:red;text-decoration:none">
+                        Clasament
                     </a>
                 </div>
                 <div class="buton">
@@ -64,9 +64,9 @@
             <img src="/icons/night-mode.png" class="poza1">
             <img src="/icons/brightness.png" class="poza2">
         </button>
-        <div class="content">
-            <div class="box">
-                <span class="nume-echipa" id="Ferrari-team">
+        <div class="content" id="pilotiCont">
+            <div class="box" id="ferrari">
+                <span class="nume-echipa">
                     Ferrari
                 </span>
                 <div class="piloti">
@@ -110,7 +110,7 @@
                     </div>
                 </div>
             </div>
-            <div class="box" id="Mercedes-team">
+            <div class="box" id="mercedes">
                 <div class="nume-echipa">
                     Mercedes
                 </div>
@@ -155,7 +155,7 @@
                     </div>
                 </div>
             </div>
-            <div class="box" id="Redbull-team">
+            <div class="box" id="red_bull">
                 <div class="nume-echipa">
                     Red Bull
                 </div>
@@ -200,7 +200,7 @@
                     </div>
                 </div>
             </div>
-            <div class="box" id="Mclaren-team">
+            <div class="box" id="mclaren">
                 <div class="nume-echipa">
                     Mclaren
                 </div>
@@ -245,7 +245,7 @@
                     </div>
                 </div>
             </div>
-            <div class="box" id="Alpine-team">
+            <div class="box" id="alpine">
                 <div class="nume-echipa">
                     Alpine
                 </div>
@@ -290,7 +290,7 @@
                     </div>
                 </div>
             </div>
-            <div class="box" id="Alfa-team">
+            <div class="box" id="alfa">
                 <div class="nume-echipa">
                     Alfa Romeo
                 </div>
@@ -335,7 +335,7 @@
                     </div>
                 </div>
             </div>
-            <div class="box" id="Haas-team">
+            <div class="box" id="haas">
                 <div class="nume-echipa">
                     Haas
                 </div>
@@ -380,7 +380,7 @@
                     </div>
                 </div>
             </div>
-            <div class="box" id="Alpha-team">
+            <div class="box" id="alphatauri">
                 <div class="nume-echipa">
                     AlphaTauri
                 </div>
@@ -425,7 +425,7 @@
                     </div>
                 </div>
             </div>
-            <div class="box" id="Williams-team">
+            <div class="box" id="williams">
                 <div class="nume-echipa">
                     Williams
                 </div>
@@ -470,7 +470,7 @@
                     </div>
                 </div>
             </div>
-            <div class="box" id="Aston-team">
+            <div class="box" id="aston_martin">
                 <div class="nume-echipa">
                     Aston Martin
                 </div>

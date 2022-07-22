@@ -17,7 +17,7 @@ echipeBtn.addEventListener("click", ()=>{
 
 const pilotiBtn = document.getElementById("piloti-button")
 pilotiBtn.addEventListener("click", ()=>{
-    window.location.assign("pagini/piloti.html")
+    window.location.assign("pagini/clasament.html")
 })
 
 const istorieBtn = document.getElementById("istorie-button")
