@@ -30,7 +30,7 @@
     width:60%;
 }
 .card-const{
-    height: 90%;
+    height: 100%;
     width: 100%;
     display: grid;
     grid-template-rows: 40% 1fr;
@@ -48,7 +48,7 @@
 }
 .partesus{
     display: grid;
-    grid-template-columns: 30% 1fr;
+    grid-template-columns: 20% 1fr;
 }
 .pozitie{
     border-right:2px solid black;
@@ -67,7 +67,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4.5rem;
+    font-size: 3rem;
+}
+.constructor-container:first-child > .card-const > .partesus > .nume-echipa{
+    font-size: 4rem;
+}
+.constructor-container:nth-child(2) > .card-const > .partesus > .nume-echipa{
+    font-size: 4rem;
 }
 .partejos{
     display: grid;

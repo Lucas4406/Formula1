@@ -17,9 +17,8 @@ fetch("http://ergast.com/api/f1/current/constructorStandings.json")
         curseCastigate.textContent = result.MRData.StandingsTable.StandingsLists[0].ConstructorStandings[i].wins
         nrPuncte.textContent = result.MRData.StandingsTable.StandingsLists[0].ConstructorStandings[i].points
         newConstructor.classList.add("constructor-container")
-        newConstructor.innerHTML = cardTemplate.innerHTML
+        newConstructor.innerHTML = constructorCard.innerHTML
         contentContainer.appendChild(newConstructor)
-        console.log(result.MRData.StandingsTable.StandingsLists[0].ConstructorStandings[i].Constructor.name)
         darkMode = localStorage.getItem("darkMode")
         if(darkMode !== "enabled"){
             enableDarkMode()

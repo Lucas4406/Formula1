@@ -234,4 +234,28 @@ fetch("/json/piloti.json")
     textData[19].innerText=" " + data.piloti[19].Data
     textLoc[19].innerText=" " + data.piloti[19].Loc
 }
-);
+)
+
+fetch("http://ergast.com/api/f1/current/constructorStandings.json")
+.then(response => 
+    response.json()
+)
+.then(data => {
+    for(var i=data.MRData.StandingsTable.StandingsLists[0].ConstructorStandings.length-2;i>0;i--){
+        var echipaUnu = document.getElementById(data.MRData.StandingsTable.StandingsLists[0].ConstructorStandings[i+1].Constructor.constructorId)
+        var echipaDoi = document.getElementById(data.MRData.StandingsTable.StandingsLists[0].ConstructorStandings[i].Constructor.constructorId)
+        document.getElementById("pilotiCont").insertBefore(echipaDoi,echipaUnu)
+    }
+    var link = window.location.href
+    var echipaNume = ""
+    for(var i=link.length-1;i>0;i--){
+        if(link[i] == '#'){
+            break
+        }
+        echipaNume = link[i] + echipaNume
+    }
+    document.getElementById(echipaNume).scrollIntoView()
+    window.scrollTo({
+        top: document.getElementById(echipaNume).offsetTop - 180, 
+    });
+})
