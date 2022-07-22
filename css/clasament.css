@@ -1,0 +1,122 @@
+.content-container{
+    margin-top:6px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding: 2rem;
+    padding-bottom:0;
+}
+.constructor-container{
+    height:20em;
+    width:auto;
+}
+.constructor-container:first-child{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 25em;
+}
+.constructor-container:nth-child(2){
+    grid-column-start: 3;
+    grid-column-end: 5;
+    height: 25em;
+}
+.constructor-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.constructor-container:first-child > .card-const,
+.constructor-container:nth-child(2) > .card-const{
+    width:60%;
+}
+.card-const{
+    height: 90%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 40% 1fr;
+    border: 3px solid black;
+}
+
+.partesus{
+    display: grid;
+    grid-template-columns: 30% 1fr;
+}
+.pozitie{
+    border-right:2px solid black;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+.nume-echipa{
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5rem;
+}
+.partejos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.curse-castigate-cont{
+    margin: 0;
+    border-top:2px solid black;
+    display: grid;
+    grid-template-rows: 30% 1fr;
+}
+.nrpuncte-cont{
+    border-left:2px solid black;
+    border-top:2px solid black;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 30% 1fr;
+}
+.text-curse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.4rem;
+    margin:0;
+}
+.text-puncte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.4rem;
+    margin:0;
+}
+.curse-castigate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    margin:0;
+}
+.nrpuncte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    margin:0;
+}
+@media(max-width: 1500px){
+    .content-container{
+        margin-top:6px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        padding: 2rem;
+        padding-bottom:0;
+    }
+    .constructor-container:first-child{
+        height: 30em;
+    }
+    .constructor-container:nth-child(2){
+        height: 30em;
+    }
+}

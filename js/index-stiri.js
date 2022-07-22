@@ -1,11 +1,11 @@
-const template  = document.querySelector("#template")
+const stiritemplate  = document.querySelector("#template")
 const contentGrid = document.querySelector(".content-grid")
 fetch("/json/stiri.json")
 .then(response => 
     response.json()
 )
 .then(data => {
-    const card = template.content.cloneNode(true).children[0]
+    const card = stiritemplate.content.cloneNode(true).children[0]
     const stireText = card.querySelector("#stiretext")
     const pozaStire = card.querySelector("#stirephoto")
     for(var i=0;i<data.Stiri.length;i++){
