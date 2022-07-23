@@ -1,15 +1,6 @@
 const qualiTemplate = document.querySelector("#quali-template")
 const contentContainer = document.querySelector(".content-container")
-/* var nrQuali = ""
-fetch("https://ergast.com/api/f1/2022/qualifying/1.json")
-.then(response => 
-    response.json()
-)
-.then(data => {
-    nrQuali = data.MRData.RaceTable.Races.length + 1
-    return nrQuali
-})
-for(var i=0;i<12;i++){
+for(var i=12;i>0;i--){
     fetch(`https://ergast.com/api/f1/2022/${i}/qualifying.json`)
     .then(response => 
         response.json()
@@ -28,21 +19,21 @@ for(var i=0;i<12;i++){
             dataCursa.textContent = data.MRData.RaceTable.Races[0].date
             numePilot[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].position + '.' + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.givenName + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.familyName
             q1[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q1
-            if(data.MRData.RaceTable.Races[0].QualifyingResults[i].Q1 === undefined){
+            if(data.MRData.RaceTable.Races[0].QualifyingResults[i].Q1 === undefined || data.MRData.RaceTable.Races[0].QualifyingResults[i].Q1 === ""){
                 const scrisq1 = document.createElement("p")
                 scrisq1.classList.add("neparticipat")
                 scrisq1.textContent = "neparticipat"
                 q1[i].appendChild(scrisq1)
             }
             q2[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q2
-            if(data.MRData.RaceTable.Races[0].QualifyingResults[i].Q2 === undefined){
+            if(data.MRData.RaceTable.Races[0].QualifyingResults[i].Q2 === undefined || data.MRData.RaceTable.Races[0].QualifyingResults[i].Q2 === ""){
                 const scrisq2 = document.createElement("p")
                 scrisq2.classList.add("neparticipat")
                 scrisq2.textContent = "neparticipat"
                 q2[i].appendChild(scrisq2)
             }
             q3[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q3
-            if(data.MRData.RaceTable.Races[0].QualifyingResults[i].Q3 === undefined){
+            if(data.MRData.RaceTable.Races[0].QualifyingResults[i].Q3 === undefined || data.MRData.RaceTable.Races[0].QualifyingResults[i].Q3 === ""){
                 const scrisq3 = document.createElement("p")
                 scrisq3.classList.add("neparticipat")
                 scrisq3.textContent = "neparticipat"
@@ -52,10 +43,16 @@ for(var i=0;i<12;i++){
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
+        darkMode = localStorage.getItem("darkMode")
+        if(darkMode !== "enabled"){
+            enableDarkMode()
+        } else{
+            disableDarkMode()
+        }
     })
-} */
+}
 
-fetch("https://ergast.com/api/f1/2022/12/qualifying.json")
+/* fetch("https://ergast.com/api/f1/2022/12/qualifying.json")
     .then(response => 
         response.json()
     )
@@ -581,4 +578,4 @@ fetch("https://ergast.com/api/f1/2022/1/qualifying.json")
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
-})
+}) */
