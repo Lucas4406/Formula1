@@ -27,3 +27,6 @@ fetch("https://ergast.com/api/f1/current/constructorStandings.json")
         }
     }
 })
+
+
+
