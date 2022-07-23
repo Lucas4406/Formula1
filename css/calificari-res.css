@@ -48,14 +48,14 @@
     gap:.5rem;
 }
 .gol{
-    flex-grow: 1.1;
+    width: 50%;
 }
 .q-container{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     padding-right:1%;
-    flex-grow: .24;
+    width:50%;
 }
 .pilot{
     display: flex;
@@ -63,7 +63,7 @@
     justify-content: space-between;
 }
 .parte-stanga{
-    flex-grow: .7;
+    width:50%;
     margin-bottom: .5rem;
     border: 2px solid black;
     display: flex;
@@ -74,14 +74,25 @@
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-grow: .24;
+    width:50%;
     padding:1%;
     margin-bottom: .5rem;
     border-bottom: 2px solid black;
     border-left: 2px solid black;
     border-right: 2px solid black;
     border-top: 2px solid black;
-
+}
+.timp-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.neparticipat{
+    display: inline;
+    margin:0;
+    font-size:1.1rem;
+    vertical-align: middle;
+    font-weight: 500;
 }
 @media(max-width:1750px){
     .gol{
@@ -96,8 +107,16 @@
         width: 70%;
     }
 }
-@media(max-width:720px){
+@media(max-width:900px){
     .tabel-container{
-        width: 80%;
+        width: 90%;
+    }
+    .content-container{
+        padding:.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        overflow-x: hidden;
     }
 }
