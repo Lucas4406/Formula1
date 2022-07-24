@@ -15,7 +15,6 @@ fetch("https://ergast.com/api/f1/2022/qualifying.json?limit=1000")
         var lengthQuali = data.MRData.RaceTable.Races.length
         for(var i=lengthQuali-1;i>=0;i--){
             var newQualiCard = document.createElement("div")
-            console.log(data.MRData.RaceTable.Races[i].Circuit.circuitName)
             numeCursa.textContent = data.MRData.RaceTable.Races[i].Circuit.circuitName
             dataCursa.textContent = new Date(data.MRData.RaceTable.Races[i].date).toISOString().replace(/T.*/,'').split('-').reverse().join('-')
             for(var j=0;j<data.MRData.RaceTable.Races[i].QualifyingResults.length;j++){
