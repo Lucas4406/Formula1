@@ -596,12 +596,6 @@ darkMode = localStorage.getItem("darkMode")
         response.json()
     )
     .then(data => {
-darkMode = localStorage.getItem("darkMode")
-            if(darkMode !== "enabled"){
-                enableDarkMode()
-            } else{
-                disableDarkMode()
-            }
         const qualiCard = qualiTemplate.content.cloneNode(true).children[0]
         const numePilot = qualiCard.querySelectorAll(".parte-stanga")
         const q1 = qualiCard.querySelectorAll("#q1")
@@ -639,6 +633,12 @@ darkMode = localStorage.getItem("darkMode")
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
+        darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
 })
 const loader = document.getElementById("preload")
 setTimeout(function(){
