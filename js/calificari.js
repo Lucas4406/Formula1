@@ -1,6 +1,6 @@
 const qualiTemplate = document.querySelector("#quali-template")
 const contentContainer = document.querySelector(".content-container")
-for(var i=12;i>0;i--){
+/* for(var i=12;i>0;i--){
     fetch(`https://ergast.com/api/f1/2022/${i}/qualifying.json`)
     .then(response => 
         response.json()
@@ -50,9 +50,9 @@ for(var i=12;i>0;i--){
             disableDarkMode()
         }
     })
-}
+} */
 
-/* fetch("https://ergast.com/api/f1/2022/12/qualifying.json")
+fetch("https://ergast.com/api/f1/2022/12/qualifying.json")
     .then(response => 
         response.json()
     )
@@ -67,7 +67,7 @@ for(var i=12;i>0;i--){
         var newQualiCard = document.createElement("div")
         for(var i=0;i<data.MRData.RaceTable.Races[0].QualifyingResults.length;i++){
             numeCursa.textContent = data.MRData.RaceTable.Races[0].Circuit.circuitName
-            dataCursa.textContent = data.MRData.RaceTable.Races[0].date
+            dataCursa.textContent = new Date(data.MRData.RaceTable.Races[0].date).toISOString().replace(/T.*/,'').split('-').reverse().join('-')
             numePilot[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].position + '.' + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.givenName + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.familyName
             q1[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q1
             if(data.MRData.RaceTable.Races[0].QualifyingResults[i].Q1 === undefined){
@@ -94,9 +94,64 @@ for(var i=12;i>0;i--){
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
+        darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
+        return fetch("https://ergast.com/api/f1/2022/11/qualifying.json")
 })
-
-fetch("https://ergast.com/api/f1/2022/11/qualifying.json")
+        .then(response => 
+            response.json()
+        )
+        .then(data => {
+            const qualiCard = qualiTemplate.content.cloneNode(true).children[0]
+            const numePilot = qualiCard.querySelectorAll(".parte-stanga")
+            const q1 = qualiCard.querySelectorAll("#q1")
+            const q2 = qualiCard.querySelectorAll("#q2")
+            const q3 = qualiCard.querySelectorAll("#q3")
+            const numeCursa = qualiCard.querySelector(".nume-cursa")
+            const dataCursa = qualiCard.querySelector(".data-cursa")
+            var newQualiCard = document.createElement("div")
+            for(var i=0;i<data.MRData.RaceTable.Races[0].QualifyingResults.length;i++){
+                numeCursa.textContent = data.MRData.RaceTable.Races[0].Circuit.circuitName
+                dataCursa.textContent = new Date(data.MRData.RaceTable.Races[0].date).toISOString().replace(/T.*/,'').split('-').reverse().join('-')
+                numePilot[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].position + '.' + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.givenName + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.familyName
+                q1[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q1
+                q2[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q2
+                if(data.MRData.RaceTable.Races[0].QualifyingResults[i].Q1 === undefined || data.MRData.RaceTable.Races[0].QualifyingResults[i].Q1 === ""){
+                    const scrisq1 = document.createElement("p")
+                    scrisq1.classList.add("neparticipat")
+                    scrisq1.textContent = "neparticipat"
+                    q1[i].appendChild(scrisq1)
+                }
+                if(data.MRData.RaceTable.Races[0].QualifyingResults[i].Q2 === undefined || data.MRData.RaceTable.Races[0].QualifyingResults[i].Q2 === ""){
+                    const scrisq2 = document.createElement("p")
+                    scrisq2.classList.add("neparticipat")
+                    scrisq2.textContent = "neparticipat"
+                    q2[i].appendChild(scrisq2)
+                }
+                q3[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q3
+                if(data.MRData.RaceTable.Races[0].QualifyingResults[i].Q3 === undefined || data.MRData.RaceTable.Races[0].QualifyingResults[i].Q3 === ""){
+                    const scrisq3 = document.createElement("p")
+                    scrisq3.classList.add("neparticipat")
+                    scrisq3.textContent = "neparticipat"
+                    q3[i].appendChild(scrisq3)
+                }
+            }
+            newQualiCard.classList.add("tabel-container")
+            newQualiCard.innerHTML = qualiCard.innerHTML
+            contentContainer.appendChild(newQualiCard)
+            contentContainer.appendChild(newQualiCard)
+            darkMode = localStorage.getItem("darkMode")
+                if(darkMode !== "enabled"){
+                    enableDarkMode()
+                } else{
+                    disableDarkMode()
+                }
+            return fetch("https://ergast.com/api/f1/2022/10/qualifying.json")
+})
     .then(response => 
         response.json()
     )
@@ -111,7 +166,7 @@ fetch("https://ergast.com/api/f1/2022/11/qualifying.json")
         var newQualiCard = document.createElement("div")
         for(var i=0;i<data.MRData.RaceTable.Races[0].QualifyingResults.length;i++){
             numeCursa.textContent = data.MRData.RaceTable.Races[0].Circuit.circuitName
-            dataCursa.textContent = data.MRData.RaceTable.Races[0].date
+            dataCursa.textContent = new Date(data.MRData.RaceTable.Races[0].date).toISOString().replace(/T.*/,'').split('-').reverse().join('-')
             numePilot[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].position + '.' + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.givenName + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.familyName
             q1[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q1
             q2[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q2
@@ -138,9 +193,14 @@ fetch("https://ergast.com/api/f1/2022/11/qualifying.json")
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
-})
-
-fetch("https://ergast.com/api/f1/2022/10/qualifying.json")
+        darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
+        return fetch("https://ergast.com/api/f1/2022/9/qualifying.json")
+})  
     .then(response => 
         response.json()
     )
@@ -155,7 +215,7 @@ fetch("https://ergast.com/api/f1/2022/10/qualifying.json")
         var newQualiCard = document.createElement("div")
         for(var i=0;i<data.MRData.RaceTable.Races[0].QualifyingResults.length;i++){
             numeCursa.textContent = data.MRData.RaceTable.Races[0].Circuit.circuitName
-            dataCursa.textContent = data.MRData.RaceTable.Races[0].date
+            dataCursa.textContent = new Date(data.MRData.RaceTable.Races[0].date).toISOString().replace(/T.*/,'').split('-').reverse().join('-')
             numePilot[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].position + '.' + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.givenName + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.familyName
             q1[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q1
             q2[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q2
@@ -182,9 +242,14 @@ fetch("https://ergast.com/api/f1/2022/10/qualifying.json")
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
+        darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
+        return fetch("https://ergast.com/api/f1/2022/8/qualifying.json")
 })
-
-fetch("https://ergast.com/api/f1/2022/9/qualifying.json")
     .then(response => 
         response.json()
     )
@@ -199,7 +264,7 @@ fetch("https://ergast.com/api/f1/2022/9/qualifying.json")
         var newQualiCard = document.createElement("div")
         for(var i=0;i<data.MRData.RaceTable.Races[0].QualifyingResults.length;i++){
             numeCursa.textContent = data.MRData.RaceTable.Races[0].Circuit.circuitName
-            dataCursa.textContent = data.MRData.RaceTable.Races[0].date
+            dataCursa.textContent = new Date(data.MRData.RaceTable.Races[0].date).toISOString().replace(/T.*/,'').split('-').reverse().join('-')
             numePilot[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].position + '.' + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.givenName + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.familyName
             q1[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q1
             q2[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q2
@@ -226,9 +291,14 @@ fetch("https://ergast.com/api/f1/2022/9/qualifying.json")
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
+        darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
+        return fetch("https://ergast.com/api/f1/2022/7/qualifying.json")
 })
-
-fetch("https://ergast.com/api/f1/2022/8/qualifying.json")
     .then(response => 
         response.json()
     )
@@ -243,7 +313,7 @@ fetch("https://ergast.com/api/f1/2022/8/qualifying.json")
         var newQualiCard = document.createElement("div")
         for(var i=0;i<data.MRData.RaceTable.Races[0].QualifyingResults.length;i++){
             numeCursa.textContent = data.MRData.RaceTable.Races[0].Circuit.circuitName
-            dataCursa.textContent = data.MRData.RaceTable.Races[0].date
+            dataCursa.textContent = new Date(data.MRData.RaceTable.Races[0].date).toISOString().replace(/T.*/,'').split('-').reverse().join('-')
             numePilot[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].position + '.' + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.givenName + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.familyName
             q1[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q1
             q2[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q2
@@ -270,9 +340,14 @@ fetch("https://ergast.com/api/f1/2022/8/qualifying.json")
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
+        darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
+        return fetch("https://ergast.com/api/f1/2022/6/qualifying.json")
 })
-
-fetch("https://ergast.com/api/f1/2022/7/qualifying.json")
     .then(response => 
         response.json()
     )
@@ -287,7 +362,7 @@ fetch("https://ergast.com/api/f1/2022/7/qualifying.json")
         var newQualiCard = document.createElement("div")
         for(var i=0;i<data.MRData.RaceTable.Races[0].QualifyingResults.length;i++){
             numeCursa.textContent = data.MRData.RaceTable.Races[0].Circuit.circuitName
-            dataCursa.textContent = data.MRData.RaceTable.Races[0].date
+            dataCursa.textContent = new Date(data.MRData.RaceTable.Races[0].date).toISOString().replace(/T.*/,'').split('-').reverse().join('-')
             numePilot[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].position + '.' + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.givenName + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.familyName
             q1[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q1
             q2[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q2
@@ -314,9 +389,14 @@ fetch("https://ergast.com/api/f1/2022/7/qualifying.json")
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
+        darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
+        return fetch("https://ergast.com/api/f1/2022/5/qualifying.json")
 })
-
-fetch("https://ergast.com/api/f1/2022/6/qualifying.json")
     .then(response => 
         response.json()
     )
@@ -331,7 +411,7 @@ fetch("https://ergast.com/api/f1/2022/6/qualifying.json")
         var newQualiCard = document.createElement("div")
         for(var i=0;i<data.MRData.RaceTable.Races[0].QualifyingResults.length;i++){
             numeCursa.textContent = data.MRData.RaceTable.Races[0].Circuit.circuitName
-            dataCursa.textContent = data.MRData.RaceTable.Races[0].date
+            dataCursa.textContent = new Date(data.MRData.RaceTable.Races[0].date).toISOString().replace(/T.*/,'').split('-').reverse().join('-')
             numePilot[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].position + '.' + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.givenName + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.familyName
             q1[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q1
             q2[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q2
@@ -358,9 +438,14 @@ fetch("https://ergast.com/api/f1/2022/6/qualifying.json")
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
+        darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
+        return fetch("https://ergast.com/api/f1/2022/4/qualifying.json")
 })
-
-fetch("https://ergast.com/api/f1/2022/5/qualifying.json")
     .then(response => 
         response.json()
     )
@@ -375,7 +460,7 @@ fetch("https://ergast.com/api/f1/2022/5/qualifying.json")
         var newQualiCard = document.createElement("div")
         for(var i=0;i<data.MRData.RaceTable.Races[0].QualifyingResults.length;i++){
             numeCursa.textContent = data.MRData.RaceTable.Races[0].Circuit.circuitName
-            dataCursa.textContent = data.MRData.RaceTable.Races[0].date
+            dataCursa.textContent = new Date(data.MRData.RaceTable.Races[0].date).toISOString().replace(/T.*/,'').split('-').reverse().join('-')
             numePilot[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].position + '.' + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.givenName + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.familyName
             q1[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q1
             q2[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q2
@@ -402,9 +487,14 @@ fetch("https://ergast.com/api/f1/2022/5/qualifying.json")
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
+        darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
+        return fetch("https://ergast.com/api/f1/2022/3/qualifying.json")
 })
-
-fetch("https://ergast.com/api/f1/2022/4/qualifying.json")
     .then(response => 
         response.json()
     )
@@ -419,7 +509,7 @@ fetch("https://ergast.com/api/f1/2022/4/qualifying.json")
         var newQualiCard = document.createElement("div")
         for(var i=0;i<data.MRData.RaceTable.Races[0].QualifyingResults.length;i++){
             numeCursa.textContent = data.MRData.RaceTable.Races[0].Circuit.circuitName
-            dataCursa.textContent = data.MRData.RaceTable.Races[0].date
+            dataCursa.textContent = new Date(data.MRData.RaceTable.Races[0].date).toISOString().replace(/T.*/,'').split('-').reverse().join('-')
             numePilot[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].position + '.' + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.givenName + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.familyName
             q1[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q1
             q2[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q2
@@ -446,9 +536,14 @@ fetch("https://ergast.com/api/f1/2022/4/qualifying.json")
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
+        darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
+        return fetch("https://ergast.com/api/f1/2022/2/qualifying.json")
 })
-
-fetch("https://ergast.com/api/f1/2022/3/qualifying.json")
     .then(response => 
         response.json()
     )
@@ -463,7 +558,7 @@ fetch("https://ergast.com/api/f1/2022/3/qualifying.json")
         var newQualiCard = document.createElement("div")
         for(var i=0;i<data.MRData.RaceTable.Races[0].QualifyingResults.length;i++){
             numeCursa.textContent = data.MRData.RaceTable.Races[0].Circuit.circuitName
-            dataCursa.textContent = data.MRData.RaceTable.Races[0].date
+            dataCursa.textContent = new Date(data.MRData.RaceTable.Races[0].date).toISOString().replace(/T.*/,'').split('-').reverse().join('-')
             numePilot[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].position + '.' + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.givenName + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.familyName
             q1[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q1
             q2[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q2
@@ -490,9 +585,14 @@ fetch("https://ergast.com/api/f1/2022/3/qualifying.json")
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
+        darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
+        return fetch("https://ergast.com/api/f1/2022/1/qualifying.json")
 })
-
-fetch("https://ergast.com/api/f1/2022/2/qualifying.json")
     .then(response => 
         response.json()
     )
@@ -507,7 +607,7 @@ fetch("https://ergast.com/api/f1/2022/2/qualifying.json")
         var newQualiCard = document.createElement("div")
         for(var i=0;i<data.MRData.RaceTable.Races[0].QualifyingResults.length;i++){
             numeCursa.textContent = data.MRData.RaceTable.Races[0].Circuit.circuitName
-            dataCursa.textContent = data.MRData.RaceTable.Races[0].date
+            dataCursa.textContent = new Date(data.MRData.RaceTable.Races[0].date).toISOString().replace(/T.*/,'').split('-').reverse().join('-')
             numePilot[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].position + '.' + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.givenName + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.familyName
             q1[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q1
             q2[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q2
@@ -534,48 +634,37 @@ fetch("https://ergast.com/api/f1/2022/2/qualifying.json")
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
+        darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
 })
+
 
 fetch("https://ergast.com/api/f1/2022/1/qualifying.json")
-    .then(response => 
-        response.json()
-    )
-    .then(data => {
-        const qualiCard = qualiTemplate.content.cloneNode(true).children[0]
-        const numePilot = qualiCard.querySelectorAll(".parte-stanga")
-        const q1 = qualiCard.querySelectorAll("#q1")
-        const q2 = qualiCard.querySelectorAll("#q2")
-        const q3 = qualiCard.querySelectorAll("#q3")
-        const numeCursa = qualiCard.querySelector(".nume-cursa")
-        const dataCursa = qualiCard.querySelector(".data-cursa")
-        var newQualiCard = document.createElement("div")
-        for(var i=0;i<data.MRData.RaceTable.Races[0].QualifyingResults.length;i++){
-            numeCursa.textContent = data.MRData.RaceTable.Races[0].Circuit.circuitName
-            dataCursa.textContent = data.MRData.RaceTable.Races[0].date
-            numePilot[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].position + '.' + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.givenName + " " + data.MRData.RaceTable.Races[0].QualifyingResults[i].Driver.familyName
-            q1[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q1
-            q2[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q2
-            if(data.MRData.RaceTable.Races[0].QualifyingResults[i].Q1 === undefined || data.MRData.RaceTable.Races[0].QualifyingResults[i].Q1 === ""){
-                const scrisq1 = document.createElement("p")
-                scrisq1.classList.add("neparticipat")
-                scrisq1.textContent = "neparticipat"
-                q1[i].appendChild(scrisq1)
-            }
-            if(data.MRData.RaceTable.Races[0].QualifyingResults[i].Q2 === undefined || data.MRData.RaceTable.Races[0].QualifyingResults[i].Q2 === ""){
-                const scrisq2 = document.createElement("p")
-                scrisq2.classList.add("neparticipat")
-                scrisq2.textContent = "neparticipat"
-                q2[i].appendChild(scrisq2)
-            }
-            q3[i].textContent = data.MRData.RaceTable.Races[0].QualifyingResults[i].Q3
-            if(data.MRData.RaceTable.Races[0].QualifyingResults[i].Q3 === undefined || data.MRData.RaceTable.Races[0].QualifyingResults[i].Q3 === ""){
-                const scrisq3 = document.createElement("p")
-                scrisq3.classList.add("neparticipat")
-                scrisq3.textContent = "neparticipat"
-                q3[i].appendChild(scrisq3)
-            }
-        }
-        newQualiCard.classList.add("tabel-container")
-        newQualiCard.innerHTML = qualiCard.innerHTML
-        contentContainer.appendChild(newQualiCard)
-}) */
+.then(response => 
+    response.json()
+).then(data => {
+    console.log(data.MRData.RaceTable.Races[0].date);
+    var dataNoua =""
+    dataNoua = new Date(data.MRData.RaceTable.Races[0].date).toISOString().replace(/T.*/,'').split('-').reverse().join('-')
+    /* if(dataNoua.getDate()<10){
+        dataAfisare = "0"+dataNoua.getDate() + "-" + dataNoua.getMonth() + "-" + dataNoua.getFullYear()
+    }
+    else{
+        dataAfisare = dataNoua.getDate() + "-" + dataNoua.getMonth() + "-" + dataNoua.getFullYear()
+    }
+    if(dataNoua.getMonth()<10){
+        dataAfisare = dataNoua.getDate() + "-" + "0" + dataNoua.getMonth() + "-" + dataNoua.getFullYear()
+    }else{
+        dataAfisare = dataNoua.getDate() + "-" + dataNoua.getMonth() + "-" + dataNoua.getFullYear()
+    }
+    if(dataNoua.getMonth()<10 && dataNoua.getDate()<10){
+        dataAfisare = "0" + dataNoua.getDate() + "-" + "0" + dataNoua.getMonth() + "-" + dataNoua.getFullYear()
+    }else{
+        dataAfisare = dataNoua.getDate() + "-" + dataNoua.getMonth() + "-" + dataNoua.getFullYear()
+    } */
+    console.log(dataNoua);
+})
