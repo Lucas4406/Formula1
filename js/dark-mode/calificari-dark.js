@@ -3,6 +3,7 @@ const darkmodeBtn = document.querySelector(".darkmodeBtn")
 const body = document.querySelector("body")
 const poza2 = document.querySelector(".poza2")
 const poza1 = document.querySelector(".poza1")
+const preloader = document.querySelector("#preload")
 const enableDarkMode = () =>{
     const textTitlu = document.querySelector(".text-titlu")
     const tabeldark = document.querySelectorAll(".tabel-container")
@@ -10,6 +11,7 @@ const enableDarkMode = () =>{
     const parteDr = document.querySelectorAll(".parte-dreapta")
     body.classList.add("dark-mode")
     textTitlu.classList.add("dark-mode")
+    preloader.classList.add("dark-mode")
     for (var i = 0; i < tabeldark.length; i++) {
         tabeldark[i].classList.add("dark-mode")
     }
@@ -28,6 +30,7 @@ const disableDarkMode = () =>{
     const parteDr = document.querySelectorAll(".parte-dreapta")
     body.classList.remove("dark-mode")
     textTitlu.classList.remove("dark-mode")
+    preloader.classList.remove("dark-mode")
     for (var i = 0; i < tabeldark.length; i++) {
         tabeldark[i].classList.remove("dark-mode")
     }

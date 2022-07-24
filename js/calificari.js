@@ -51,7 +51,6 @@ const contentContainer = document.querySelector(".content-container")
         }
     })
 } */
-
 fetch("https://ergast.com/api/f1/2022/12/qualifying.json")
     .then(response => 
         response.json()
@@ -642,29 +641,7 @@ fetch("https://ergast.com/api/f1/2022/12/qualifying.json")
             }
 })
 
-
-fetch("https://ergast.com/api/f1/2022/1/qualifying.json")
-.then(response => 
-    response.json()
-).then(data => {
-    console.log(data.MRData.RaceTable.Races[0].date);
-    var dataNoua =""
-    dataNoua = new Date(data.MRData.RaceTable.Races[0].date).toISOString().replace(/T.*/,'').split('-').reverse().join('-')
-    /* if(dataNoua.getDate()<10){
-        dataAfisare = "0"+dataNoua.getDate() + "-" + dataNoua.getMonth() + "-" + dataNoua.getFullYear()
-    }
-    else{
-        dataAfisare = dataNoua.getDate() + "-" + dataNoua.getMonth() + "-" + dataNoua.getFullYear()
-    }
-    if(dataNoua.getMonth()<10){
-        dataAfisare = dataNoua.getDate() + "-" + "0" + dataNoua.getMonth() + "-" + dataNoua.getFullYear()
-    }else{
-        dataAfisare = dataNoua.getDate() + "-" + dataNoua.getMonth() + "-" + dataNoua.getFullYear()
-    }
-    if(dataNoua.getMonth()<10 && dataNoua.getDate()<10){
-        dataAfisare = "0" + dataNoua.getDate() + "-" + "0" + dataNoua.getMonth() + "-" + dataNoua.getFullYear()
-    }else{
-        dataAfisare = dataNoua.getDate() + "-" + dataNoua.getMonth() + "-" + dataNoua.getFullYear()
-    } */
-    console.log(dataNoua);
-})
+const loader = document.getElementById("preload")
+setTimeout(function(){
+    loader.style.display = "none"
+}, 1000)
