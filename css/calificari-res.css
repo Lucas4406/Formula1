@@ -22,7 +22,6 @@
 }
 .quri{
     margin:0;
-    width:79px;
     text-align: center;
 }
 .tabel-container{
@@ -44,6 +43,7 @@
     display:flex;
     justify-content: center;
     font-size: 2rem;
+    font-weight: 500;
 }
 .data-cursa{
     display:flex;
@@ -63,7 +63,8 @@
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-right:1%;
+    padding-right:4%;
+    padding-left:10%;
     width:50%;
 }
 .pilot{
@@ -108,6 +109,13 @@
     font-size:1.1rem;
     vertical-align: middle;
     font-weight: 500;
+}
+.pilot:first-child >.parte-stanga{
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+.pilot:first-child >.parte-dreapta > .timp-container:nth-child(3){
+    font-weight: 600;
 }
 @media(max-width:1750px){
     .gol{
