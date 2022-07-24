@@ -640,8 +640,8 @@ fetch("https://ergast.com/api/f1/2022/12/qualifying.json")
                 disableDarkMode()
             }
 })
-
 const loader = document.getElementById("preload")
 setTimeout(function(){
     loader.style.display = "none"
+    contentContainer.style.display ="flex"
 }, 1000)

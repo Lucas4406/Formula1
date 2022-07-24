@@ -15,7 +15,7 @@
 }
 .content-container{
     padding:1rem;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     width: 100vw;
