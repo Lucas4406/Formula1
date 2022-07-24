@@ -56,6 +56,12 @@ fetch("https://ergast.com/api/f1/2022/12/qualifying.json")
         response.json()
     )
     .then(data => {
+        darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
         const qualiCard = qualiTemplate.content.cloneNode(true).children[0]
         const numePilot = qualiCard.querySelectorAll(".parte-stanga")
         const q1 = qualiCard.querySelectorAll("#q1")
@@ -93,18 +99,18 @@ fetch("https://ergast.com/api/f1/2022/12/qualifying.json")
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
-        darkMode = localStorage.getItem("darkMode")
-            if(darkMode !== "enabled"){
-                enableDarkMode()
-            } else{
-                disableDarkMode()
-            }
         return fetch("https://ergast.com/api/f1/2022/11/qualifying.json")
 })
         .then(response => 
             response.json()
         )
         .then(data => {
+            darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
             const qualiCard = qualiTemplate.content.cloneNode(true).children[0]
             const numePilot = qualiCard.querySelectorAll(".parte-stanga")
             const q1 = qualiCard.querySelectorAll("#q1")
@@ -143,18 +149,18 @@ fetch("https://ergast.com/api/f1/2022/12/qualifying.json")
             newQualiCard.innerHTML = qualiCard.innerHTML
             contentContainer.appendChild(newQualiCard)
             contentContainer.appendChild(newQualiCard)
-            darkMode = localStorage.getItem("darkMode")
-                if(darkMode !== "enabled"){
-                    enableDarkMode()
-                } else{
-                    disableDarkMode()
-                }
             return fetch("https://ergast.com/api/f1/2022/10/qualifying.json")
 })
     .then(response => 
         response.json()
     )
     .then(data => {
+        darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
         const qualiCard = qualiTemplate.content.cloneNode(true).children[0]
         const numePilot = qualiCard.querySelectorAll(".parte-stanga")
         const q1 = qualiCard.querySelectorAll("#q1")
@@ -192,18 +198,18 @@ fetch("https://ergast.com/api/f1/2022/12/qualifying.json")
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
-        darkMode = localStorage.getItem("darkMode")
-            if(darkMode !== "enabled"){
-                enableDarkMode()
-            } else{
-                disableDarkMode()
-            }
         return fetch("https://ergast.com/api/f1/2022/9/qualifying.json")
 })  
     .then(response => 
         response.json()
     )
     .then(data => {
+darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
         const qualiCard = qualiTemplate.content.cloneNode(true).children[0]
         const numePilot = qualiCard.querySelectorAll(".parte-stanga")
         const q1 = qualiCard.querySelectorAll("#q1")
@@ -241,18 +247,18 @@ fetch("https://ergast.com/api/f1/2022/12/qualifying.json")
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
-        darkMode = localStorage.getItem("darkMode")
-            if(darkMode !== "enabled"){
-                enableDarkMode()
-            } else{
-                disableDarkMode()
-            }
         return fetch("https://ergast.com/api/f1/2022/8/qualifying.json")
 })
     .then(response => 
         response.json()
     )
     .then(data => {
+darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
         const qualiCard = qualiTemplate.content.cloneNode(true).children[0]
         const numePilot = qualiCard.querySelectorAll(".parte-stanga")
         const q1 = qualiCard.querySelectorAll("#q1")
@@ -290,18 +296,18 @@ fetch("https://ergast.com/api/f1/2022/12/qualifying.json")
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
-        darkMode = localStorage.getItem("darkMode")
-            if(darkMode !== "enabled"){
-                enableDarkMode()
-            } else{
-                disableDarkMode()
-            }
         return fetch("https://ergast.com/api/f1/2022/7/qualifying.json")
 })
     .then(response => 
         response.json()
     )
     .then(data => {
+darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
         const qualiCard = qualiTemplate.content.cloneNode(true).children[0]
         const numePilot = qualiCard.querySelectorAll(".parte-stanga")
         const q1 = qualiCard.querySelectorAll("#q1")
@@ -339,18 +345,18 @@ fetch("https://ergast.com/api/f1/2022/12/qualifying.json")
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
-        darkMode = localStorage.getItem("darkMode")
-            if(darkMode !== "enabled"){
-                enableDarkMode()
-            } else{
-                disableDarkMode()
-            }
         return fetch("https://ergast.com/api/f1/2022/6/qualifying.json")
 })
     .then(response => 
         response.json()
     )
     .then(data => {
+darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
         const qualiCard = qualiTemplate.content.cloneNode(true).children[0]
         const numePilot = qualiCard.querySelectorAll(".parte-stanga")
         const q1 = qualiCard.querySelectorAll("#q1")
@@ -388,18 +394,18 @@ fetch("https://ergast.com/api/f1/2022/12/qualifying.json")
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
-        darkMode = localStorage.getItem("darkMode")
-            if(darkMode !== "enabled"){
-                enableDarkMode()
-            } else{
-                disableDarkMode()
-            }
         return fetch("https://ergast.com/api/f1/2022/5/qualifying.json")
 })
     .then(response => 
         response.json()
     )
     .then(data => {
+darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
         const qualiCard = qualiTemplate.content.cloneNode(true).children[0]
         const numePilot = qualiCard.querySelectorAll(".parte-stanga")
         const q1 = qualiCard.querySelectorAll("#q1")
@@ -437,18 +443,18 @@ fetch("https://ergast.com/api/f1/2022/12/qualifying.json")
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
-        darkMode = localStorage.getItem("darkMode")
-            if(darkMode !== "enabled"){
-                enableDarkMode()
-            } else{
-                disableDarkMode()
-            }
         return fetch("https://ergast.com/api/f1/2022/4/qualifying.json")
 })
     .then(response => 
         response.json()
     )
     .then(data => {
+darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
         const qualiCard = qualiTemplate.content.cloneNode(true).children[0]
         const numePilot = qualiCard.querySelectorAll(".parte-stanga")
         const q1 = qualiCard.querySelectorAll("#q1")
@@ -486,18 +492,18 @@ fetch("https://ergast.com/api/f1/2022/12/qualifying.json")
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
-        darkMode = localStorage.getItem("darkMode")
-            if(darkMode !== "enabled"){
-                enableDarkMode()
-            } else{
-                disableDarkMode()
-            }
         return fetch("https://ergast.com/api/f1/2022/3/qualifying.json")
 })
     .then(response => 
         response.json()
     )
     .then(data => {
+darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
         const qualiCard = qualiTemplate.content.cloneNode(true).children[0]
         const numePilot = qualiCard.querySelectorAll(".parte-stanga")
         const q1 = qualiCard.querySelectorAll("#q1")
@@ -535,18 +541,18 @@ fetch("https://ergast.com/api/f1/2022/12/qualifying.json")
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
-        darkMode = localStorage.getItem("darkMode")
-            if(darkMode !== "enabled"){
-                enableDarkMode()
-            } else{
-                disableDarkMode()
-            }
         return fetch("https://ergast.com/api/f1/2022/2/qualifying.json")
 })
     .then(response => 
         response.json()
     )
     .then(data => {
+darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
         const qualiCard = qualiTemplate.content.cloneNode(true).children[0]
         const numePilot = qualiCard.querySelectorAll(".parte-stanga")
         const q1 = qualiCard.querySelectorAll("#q1")
@@ -584,18 +590,18 @@ fetch("https://ergast.com/api/f1/2022/12/qualifying.json")
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
-        darkMode = localStorage.getItem("darkMode")
-            if(darkMode !== "enabled"){
-                enableDarkMode()
-            } else{
-                disableDarkMode()
-            }
         return fetch("https://ergast.com/api/f1/2022/1/qualifying.json")
 })
     .then(response => 
         response.json()
     )
     .then(data => {
+darkMode = localStorage.getItem("darkMode")
+            if(darkMode !== "enabled"){
+                enableDarkMode()
+            } else{
+                disableDarkMode()
+            }
         const qualiCard = qualiTemplate.content.cloneNode(true).children[0]
         const numePilot = qualiCard.querySelectorAll(".parte-stanga")
         const q1 = qualiCard.querySelectorAll("#q1")
@@ -633,15 +639,9 @@ fetch("https://ergast.com/api/f1/2022/12/qualifying.json")
         newQualiCard.classList.add("tabel-container")
         newQualiCard.innerHTML = qualiCard.innerHTML
         contentContainer.appendChild(newQualiCard)
-        darkMode = localStorage.getItem("darkMode")
-            if(darkMode !== "enabled"){
-                enableDarkMode()
-            } else{
-                disableDarkMode()
-            }
 })
 const loader = document.getElementById("preload")
 setTimeout(function(){
     loader.style.display = "none"
     contentContainer.style.display ="flex"
-}, 1000)
+}, 2000)
