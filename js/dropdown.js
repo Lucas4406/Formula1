@@ -1,14 +1,13 @@
-const unButon = document.querySelector("#buton-dpd")
-const dpdMenu = document.querySelector(".dropdown-menu")
-unButon.addEventListener("click" , ()=>{
-    dpdMenu.classList.toggle("active")
-})
-var myElementToCheckIfClicksAreInsideOf = document.querySelector('.dropdown-menu');
-// Listen for click events on body
-document.body.addEventListener('click', function (event) {
-    if (myElementToCheckIfClicksAreInsideOf.contains(event.target)) {
-        console.log('clicked inside');
-    } else {
-        console.log('clicked inside');
+document.addEventListener("click", e => {
+    const isDropdownButton = e.target.matches("[data-dropdown-button]")
+    if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return
+    let currentDropdown
+    if (isDropdownButton) {
+      currentDropdown = e.target.closest("[data-dropdown]")
+      currentDropdown.classList.toggle("active")
     }
-});
+    document.querySelectorAll("[data-dropdown].active").forEach(dropdown => {
+        if (dropdown === currentDropdown) return
+        dropdown.classList.remove("active")
+      })
+})

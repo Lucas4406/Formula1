@@ -19,10 +19,6 @@ const pilotiBtn = document.getElementById("clasament-button")
 pilotiBtn.addEventListener("click", ()=>{
     window.location.assign("pagini/clasament.html")
 })
-const qualiBtn = document.getElementById("rezultate-button")
-qualiBtn.addEventListener("click", ()=>{
-    window.location.assign("pagini/calificari-res.html")
-})
 const istorieBtn = document.getElementById("istorie-button")
 istorieBtn.addEventListener("click", ()=>{
     window.location.assign("pagini/istorie.html")
