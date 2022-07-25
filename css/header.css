@@ -20,8 +20,11 @@ body{
     padding-right: .3rem;
     position: relative;
 }
-.buton.active{
-    opacity:.8;
+.buton:hover{
+    opacity: .7;
+}
+.buton > a:hover{
+    opacity: .7;
 }
 .buton:hover > p{
     opacity:0.7;
