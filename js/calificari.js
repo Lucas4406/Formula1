@@ -12,10 +12,13 @@ fetch("https://ergast.com/api/f1/2022/qualifying.json?limit=1000")
         const q3 = qualiCard.querySelectorAll("#q3")
         const numeCursa = qualiCard.querySelector(".nume-cursa")
         const dataCursa = qualiCard.querySelector(".data-cursa")
+        const locCursa = qualiCard.querySelector(".loc-cursa")
         var lengthQuali = data.MRData.RaceTable.Races.length
+        console.log(data.MRData.RaceTable.Races[0].Circuit.Location.country);
         for(var i=lengthQuali-1;i>=0;i--){
             var newQualiCard = document.createElement("div")
             numeCursa.textContent = data.MRData.RaceTable.Races[i].Circuit.circuitName
+            locCursa.textContent = data.MRData.RaceTable.Races[i].Circuit.Location.country
             dataCursa.textContent = new Date(data.MRData.RaceTable.Races[i].date).toISOString().replace(/T.*/,'').split('-').reverse().join('-')
             for(var j=0;j<data.MRData.RaceTable.Races[i].QualifyingResults.length;j++){
                 numePilot[j].textContent = data.MRData.RaceTable.Races[i].QualifyingResults[j].position + '.' + " " + data.MRData.RaceTable.Races[i].QualifyingResults[j].Driver.givenName + " " + data.MRData.RaceTable.Races[i].QualifyingResults[j].Driver.familyName

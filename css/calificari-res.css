@@ -50,6 +50,11 @@
     justify-content: center;
     font-size:1.4rem;
 }
+.loc-cursa{
+    display:flex;
+    justify-content: center;
+    font-size:1.4rem;
+}
 .laptime{
     display:flex;
     flex-direction: row;
