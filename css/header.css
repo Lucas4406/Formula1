@@ -20,13 +20,10 @@ body{
     padding-right: .3rem;
     position: relative;
 }
-.buton:hover{
+.buton:hover > a{
     opacity: .7;
 }
-.buton > a:hover{
-    opacity: .7;
-}
-.buton:hover > p{
+.buton:hover > p:first-child{
     opacity:0.7;
 }
 .logo-f1{
@@ -98,6 +95,9 @@ body{
     left:-.5rem;
     border: 2px solid red;
 }
+.buton.active:hover > .dropdown-menu > p{
+    opacity: 1;
+}
 .text-dropdown{
     margin: 0;
     text-decoration: none;
@@ -114,4 +114,7 @@ body{
 }
 .text-dropdown:nth-child(2){
     padding-top:1rem;
+}
+.buton-text{
+    margin:0;
 }
