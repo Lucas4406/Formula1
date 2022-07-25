@@ -44,12 +44,8 @@ fetch("/json/stiri.json")
     for(var i=0;i<textCont.length;i++){
         textCont[i].textContent = data.Stiri[0].textcont[i]
     }
-    for(var i=0;i<data.Stiri[0].link1.length;i++){
-        link1.href = data.Stiri[0].link1[i]
-        link1.textContent = data.Stiri[0].link1[i]
-    }
-    for(var i=0;i<data.Stiri[0].link2.length;i++){
-        link2.href = data.Stiri[0].link2[i]
-        link2.textContent = data.Stiri[0].link2[i]
-    }
+    link1.href = data.Stiri[0].link1[0]
+    link1.textContent = data.Stiri[0].link1[1]
+    link2.href = data.Stiri[0].link2[0]
+    link2.textContent = data.Stiri[0].link2[1]
 })
