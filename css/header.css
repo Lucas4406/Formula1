@@ -83,7 +83,7 @@ body{
 .dropdown-menu{
     display: none;
 }
-.dropdown-menu.active{
+.buton.active > .dropdown-menu{
     position: absolute;
     top:3rem;
     background-color: black;
@@ -91,13 +91,24 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding:1rem;
+    padding:.5rem;
     left:-.5rem;
-    border: 1px solid red;
-    gap:.5rem;
+    border: 2px solid red;
 }
 .text-dropdown{
     margin: 0;
     text-decoration: none;
     color: red;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:.25rem;
+}
+.text-dropdown:first-child{
+    border-bottom: 1px solid red;
+    padding-bottom:1rem;
+}
+.text-dropdown:nth-child(2){
+    padding-top:1rem;
 }

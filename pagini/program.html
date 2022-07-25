@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=0.5">
         <link rel="stylesheet" href="/css/header.css">
         <link rel="stylesheet" href="/css/content-program.css">
+        <script src="/js/dropdown.js" defer></script>
         <link rel="SHORTCUT ICON" href="/poze/logo-f1.ico" type="image/x-icon"/>
         <link rel="ICON" href="/poze/logo-f1.ico" type="image/ico"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,10 +50,14 @@
                         Clasament
                     </a>
                 </div>
-                <div class="buton">
-                    <a href="/pagini/calificari-res.html" style="color:red;text-decoration:none">
+                <div class="buton" id="buton-dpd" data-dropdown>
+                    <p style="color:red;margin:0" data-dropdown-button>
                         Rezultate
-                    </a>
+                    </p>
+                    <div class="dropdown-menu">
+                        <a class="text-dropdown" href="/pagini/curse-res.html">Curse</a>
+                        <a class="text-dropdown" href="/pagini/calificari-res.html">Calificări</a>
+                    </div>
                 </div>
                 <div class="buton">
                     <a href="/pagini/istorie.html" style="color:red;text-decoration:none">

@@ -8,15 +8,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=0.5">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/content.css">
+        <script src="js/index.js" defer></script>
+        <link rel="stylesheet" href="css/dark-mode.css">
+        <script src="js/index-stiri.js" defer></script>
+        <script src="js/dark-mode/dark-mode.js" defer></script>
+        <script src="js/dropdown.js" defer></script>
         <link rel="SHORTCUT ICON" href="poze/logo-f1.ico" type="image/x-icon"/>
         <link rel="ICON" href="poze/logo-f1.ico" type="image/ico"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-        <script src="js/index.js" defer></script>
-        <link rel="stylesheet" href="css/dark-mode.css">
-        <script src="js/index-stiri.js" defer></script>
-        <script src="js/dark-mode/dark-mode.js" defer></script>
     </head>
     <body>
         <div class="header">
@@ -41,8 +42,14 @@
                 <div class="buton" id="clasament-button" title="Spre pagina cu clasament"> 
                     Clasament
                 </div>
-                <div class="buton" id="rezultate-button" title="Spre pagina cu rezultate"> 
-                    Rezultate
+                <div class="buton" id="buton-dpd" data-dropdown>
+                    <p style="color:red;margin:0" data-dropdown-button>
+                        Rezultate
+                    </p>
+                    <div class="dropdown-menu">
+                        <a class="text-dropdown" href="/pagini/curse-res.html">Curse</a>
+                        <a class="text-dropdown" href="/pagini/calificari-res.html">Calificări</a>
+                    </div>
                 </div>
                 <div class="buton" id="istorie-button" title="Spre pagina cu istorie">
                     Istorie
