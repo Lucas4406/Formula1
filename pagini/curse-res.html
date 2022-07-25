@@ -76,75 +76,399 @@
             <img src="/icons/brightness.png" class="poza2">
         </button>
         <div class="container-curse">
-            <p class="titlu-pagina-curse">Rezultate curse 2022</p>
-            <div class="tabel-container-curse">
-                <div class="tabel-cursa">
-                    <div class="tabel-header">
-                        <p class="nume-cursa">Bahrain Grand Prix</p>
-                        <p class="data-cursa">24-07-2022</p>
-                        <p class="loc-cursa">Bahrain</p>
+            <p class="titlu-pagina-curse"></p>
+            <div class="tabel-container-curse"></div>
+        </div>
+        <template id="curse-template">
+            <div class="tabel-cursa">
+                <div class="tabel-header">
+                    <p class="nume-cursa"></p>
+                    <p class="data-cursa"></p>
+                    <p class="loc-cursa"></p>
+                </div>
+                <div class="tabel-body">
+                    <div class="pilot-container">
+                        <div class="parte-sus-pilot">
+                            <div class="pozitie"></div>
+                            <div class="numesiechipa">
+                                <p class="nume-pilot"></p>
+                                <p class="echipa-pilot"></p>
+                            </div>
+                        </div>
+                        <div class="parte-jos-pilot">
+                            <div class="status">
+                                <p class="status-text">Status</p>
+                                <p class="status-status"></p>
+                            </div>
+                            <div class="fastest-lap">
+                                <p class="fastest-text">Cel mai rapid tur</p>
+                                <p class="fastet-lap"></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tabel-body">
-                        <div class="pilot-container">
-                            <div class="parte-sus-pilot">
-                                <div class="pozitie">
-                                    1.
-                                </div>
-                                <div class="numesiechipa">
-                                    <p class="nume-pilot">Lewis Hamilton</p>
-                                    <p class="echipa-pilot">Mercedes</p>
-                                </div>
-                            </div>
-                            <div class="parte-jos-pilot">
-                                <div class="status">Finished</div>
-                                <div class="fastest-lap">
-                                    <p class="fastest-text">Cel mai rapid tur</p>
-                                    <p class="fastet-lap">1:34:900</p>
-                                </div>
+                    <div class="pilot-container">
+                        <div class="parte-sus-pilot">
+                            <div class="pozitie"></div>
+                            <div class="numesiechipa">
+                                <p class="nume-pilot"></p>
+                                <p class="echipa-pilot"></p>
                             </div>
                         </div>
-                        <div class="pilot-container">
-                            <div class="parte-sus-pilot">
-                                <div class="pozitie">
-                                    2.
-                                </div>
-                                <div class="numesiechipa">
-                                    <p class="nume-pilot">Lewis Hamilton</p>
-                                    <p class="echipa-pilot">Mercedes</p>
-                                </div>
+                        <div class="parte-jos-pilot">
+                            <div class="status">
+                                <p class="status-text">Status</p>
+                                <p class="status-status"></p>
                             </div>
-                            <div class="parte-jos-pilot">
-                                <div class="status">
-                                    <p class="status-text">Status</p>
-                                    <p class="status-status">DNF</p>
-                                </div>
-                                <div class="fastest-lap">
-                                    <p class="fastest-text">Cel mai rapid tur</p>
-                                    <p class="fastet-lap">1:34:900</p>
-                                </div>
+                            <div class="fastest-lap">
+                                <p class="fastest-text">Cel mai rapid tur</p>
+                                <p class="fastet-lap"></p>
                             </div>
                         </div>
-                        <div class="pilot-container">
-                            <div class="parte-sus-pilot">
-                                <div class="pozitie">
-                                    3.
-                                </div>
-                                <div class="numesiechipa">
-                                    <p class="nume-pilot">Lewis Hamilton</p>
-                                    <p class="echipa-pilot">Mercedes</p>
-                                </div>
+                    </div>
+                    <div class="pilot-container">
+                        <div class="parte-sus-pilot">
+                            <div class="pozitie"></div>
+                            <div class="numesiechipa">
+                                <p class="nume-pilot"></p>
+                                <p class="echipa-pilot"></p>
                             </div>
-                            <div class="parte-jos-pilot">
-                                <div class="status">DNF</div>
-                                <div class="fastest-lap">
-                                    <p class="fastest-text">Cel mai rapid tur</p>
-                                    <p class="fastet-lap">1:34:900</p>
-                                </div>
+                        </div>
+                        <div class="parte-jos-pilot">
+                            <div class="status">
+                                <p class="status-text">Status</p>
+                                <p class="status-status"></p>
+                            </div>
+                            <div class="fastest-lap">
+                                <p class="fastest-text">Cel mai rapid tur</p>
+                                <p class="fastet-lap"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pilot-container">
+                        <div class="parte-sus-pilot">
+                            <div class="pozitie"></div>
+                            <div class="numesiechipa">
+                                <p class="nume-pilot"></p>
+                                <p class="echipa-pilot"></p>
+                            </div>
+                        </div>
+                        <div class="parte-jos-pilot">
+                            <div class="status">
+                                <p class="status-text">Status</p>
+                                <p class="status-status"></p>
+                            </div>
+                            <div class="fastest-lap">
+                                <p class="fastest-text">Cel mai rapid tur</p>
+                                <p class="fastet-lap"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pilot-container">
+                        <div class="parte-sus-pilot">
+                            <div class="pozitie"></div>
+                            <div class="numesiechipa">
+                                <p class="nume-pilot"></p>
+                                <p class="echipa-pilot"></p>
+                            </div>
+                        </div>
+                        <div class="parte-jos-pilot">
+                            <div class="status">
+                                <p class="status-text">Status</p>
+                                <p class="status-status"></p>
+                            </div>
+                            <div class="fastest-lap">
+                                <p class="fastest-text">Cel mai rapid tur</p>
+                                <p class="fastet-lap"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pilot-container">
+                        <div class="parte-sus-pilot">
+                            <div class="pozitie"></div>
+                            <div class="numesiechipa">
+                                <p class="nume-pilot"></p>
+                                <p class="echipa-pilot"></p>
+                            </div>
+                        </div>
+                        <div class="parte-jos-pilot">
+                            <div class="status">
+                                <p class="status-text">Status</p>
+                                <p class="status-status"></p>
+                            </div>
+                            <div class="fastest-lap">
+                                <p class="fastest-text">Cel mai rapid tur</p>
+                                <p class="fastet-lap"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pilot-container">
+                        <div class="parte-sus-pilot">
+                            <div class="pozitie"></div>
+                            <div class="numesiechipa">
+                                <p class="nume-pilot"></p>
+                                <p class="echipa-pilot"></p>
+                            </div>
+                        </div>
+                        <div class="parte-jos-pilot">
+                            <div class="status">
+                                <p class="status-text">Status</p>
+                                <p class="status-status"></p>
+                            </div>
+                            <div class="fastest-lap">
+                                <p class="fastest-text">Cel mai rapid tur</p>
+                                <p class="fastet-lap"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pilot-container">
+                        <div class="parte-sus-pilot">
+                            <div class="pozitie"></div>
+                            <div class="numesiechipa">
+                                <p class="nume-pilot"></p>
+                                <p class="echipa-pilot"></p>
+                            </div>
+                        </div>
+                        <div class="parte-jos-pilot">
+                            <div class="status">
+                                <p class="status-text">Status</p>
+                                <p class="status-status"></p>
+                            </div>
+                            <div class="fastest-lap">
+                                <p class="fastest-text">Cel mai rapid tur</p>
+                                <p class="fastet-lap"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pilot-container">
+                        <div class="parte-sus-pilot">
+                            <div class="pozitie"></div>
+                            <div class="numesiechipa">
+                                <p class="nume-pilot"></p>
+                                <p class="echipa-pilot"></p>
+                            </div>
+                        </div>
+                        <div class="parte-jos-pilot">
+                            <div class="status">
+                                <p class="status-text">Status</p>
+                                <p class="status-status"></p>
+                            </div>
+                            <div class="fastest-lap">
+                                <p class="fastest-text">Cel mai rapid tur</p>
+                                <p class="fastet-lap"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pilot-container">
+                        <div class="parte-sus-pilot">
+                            <div class="pozitie"></div>
+                            <div class="numesiechipa">
+                                <p class="nume-pilot"></p>
+                                <p class="echipa-pilot"></p>
+                            </div>
+                        </div>
+                        <div class="parte-jos-pilot">
+                            <div class="status">
+                                <p class="status-text">Status</p>
+                                <p class="status-status"></p>
+                            </div>
+                            <div class="fastest-lap">
+                                <p class="fastest-text">Cel mai rapid tur</p>
+                                <p class="fastet-lap"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pilot-container">
+                        <div class="parte-sus-pilot">
+                            <div class="pozitie"></div>
+                            <div class="numesiechipa">
+                                <p class="nume-pilot"></p>
+                                <p class="echipa-pilot"></p>
+                            </div>
+                        </div>
+                        <div class="parte-jos-pilot">
+                            <div class="status">
+                                <p class="status-text">Status</p>
+                                <p class="status-status"></p>
+                            </div>
+                            <div class="fastest-lap">
+                                <p class="fastest-text">Cel mai rapid tur</p>
+                                <p class="fastet-lap"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pilot-container">
+                        <div class="parte-sus-pilot">
+                            <div class="pozitie"></div>
+                            <div class="numesiechipa">
+                                <p class="nume-pilot"></p>
+                                <p class="echipa-pilot"></p>
+                            </div>
+                        </div>
+                        <div class="parte-jos-pilot">
+                            <div class="status">
+                                <p class="status-text">Status</p>
+                                <p class="status-status"></p>
+                            </div>
+                            <div class="fastest-lap">
+                                <p class="fastest-text">Cel mai rapid tur</p>
+                                <p class="fastet-lap"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pilot-container">
+                        <div class="parte-sus-pilot">
+                            <div class="pozitie"></div>
+                            <div class="numesiechipa">
+                                <p class="nume-pilot"></p>
+                                <p class="echipa-pilot"></p>
+                            </div>
+                        </div>
+                        <div class="parte-jos-pilot">
+                            <div class="status">
+                                <p class="status-text">Status</p>
+                                <p class="status-status"></p>
+                            </div>
+                            <div class="fastest-lap">
+                                <p class="fastest-text">Cel mai rapid tur</p>
+                                <p class="fastet-lap"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pilot-container">
+                        <div class="parte-sus-pilot">
+                            <div class="pozitie"></div>
+                            <div class="numesiechipa">
+                                <p class="nume-pilot"></p>
+                                <p class="echipa-pilot"></p>
+                            </div>
+                        </div>
+                        <div class="parte-jos-pilot">
+                            <div class="status">
+                                <p class="status-text">Status</p>
+                                <p class="status-status"></p>
+                            </div>
+                            <div class="fastest-lap">
+                                <p class="fastest-text">Cel mai rapid tur</p>
+                                <p class="fastet-lap"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pilot-container">
+                        <div class="parte-sus-pilot">
+                            <div class="pozitie"></div>
+                            <div class="numesiechipa">
+                                <p class="nume-pilot"></p>
+                                <p class="echipa-pilot"></p>
+                            </div>
+                        </div>
+                        <div class="parte-jos-pilot">
+                            <div class="status">
+                                <p class="status-text">Status</p>
+                                <p class="status-status"></p>
+                            </div>
+                            <div class="fastest-lap">
+                                <p class="fastest-text">Cel mai rapid tur</p>
+                                <p class="fastet-lap"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pilot-container">
+                        <div class="parte-sus-pilot">
+                            <div class="pozitie"></div>
+                            <div class="numesiechipa">
+                                <p class="nume-pilot"></p>
+                                <p class="echipa-pilot"></p>
+                            </div>
+                        </div>
+                        <div class="parte-jos-pilot">
+                            <div class="status">
+                                <p class="status-text">Status</p>
+                                <p class="status-status"></p>
+                            </div>
+                            <div class="fastest-lap">
+                                <p class="fastest-text">Cel mai rapid tur</p>
+                                <p class="fastet-lap"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pilot-container">
+                        <div class="parte-sus-pilot">
+                            <div class="pozitie"></div>
+                            <div class="numesiechipa">
+                                <p class="nume-pilot"></p>
+                                <p class="echipa-pilot"></p>
+                            </div>
+                        </div>
+                        <div class="parte-jos-pilot">
+                            <div class="status">
+                                <p class="status-text">Status</p>
+                                <p class="status-status"></p>
+                            </div>
+                            <div class="fastest-lap">
+                                <p class="fastest-text">Cel mai rapid tur</p>
+                                <p class="fastet-lap"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pilot-container">
+                        <div class="parte-sus-pilot">
+                            <div class="pozitie"></div>
+                            <div class="numesiechipa">
+                                <p class="nume-pilot"></p>
+                                <p class="echipa-pilot"></p>
+                            </div>
+                        </div>
+                        <div class="parte-jos-pilot">
+                            <div class="status">
+                                <p class="status-text">Status</p>
+                                <p class="status-status"></p>
+                            </div>
+                            <div class="fastest-lap">
+                                <p class="fastest-text">Cel mai rapid tur</p>
+                                <p class="fastet-lap"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pilot-container">
+                        <div class="parte-sus-pilot">
+                            <div class="pozitie"></div>
+                            <div class="numesiechipa">
+                                <p class="nume-pilot"></p>
+                                <p class="echipa-pilot"></p>
+                            </div>
+                        </div>
+                        <div class="parte-jos-pilot">
+                            <div class="status">
+                                <p class="status-text">Status</p>
+                                <p class="status-status"></p>
+                            </div>
+                            <div class="fastest-lap">
+                                <p class="fastest-text">Cel mai rapid tur</p>
+                                <p class="fastet-lap"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pilot-container">
+                        <div class="parte-sus-pilot">
+                            <div class="pozitie"></div>
+                            <div class="numesiechipa">
+                                <p class="nume-pilot"></p>
+                                <p class="echipa-pilot"></p>
+                            </div>
+                        </div>
+                        <div class="parte-jos-pilot">
+                            <div class="status">
+                                <p class="status-text">Status</p>
+                                <p class="status-status"></p>
+                            </div>
+                            <div class="fastest-lap">
+                                <p class="fastest-text">Cel mai rapid tur</p>
+                                <p class="fastet-lap"></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </template>
     </body>
 </html>
