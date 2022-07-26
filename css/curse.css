@@ -21,7 +21,7 @@
     gap:1.5rem;
 }
 .tabel-cursa{
-    border:2px solid black;
+    border:3px solid black;
     border-radius:1%;
     padding:.5rem;
     width: 50%;
@@ -48,16 +48,23 @@
     display: flex;
     flex-direction: column;
     gap:1rem;
+    transition: transform 250ms ease-in-out;
+    border-radius: 0  0 15px 0;
+}
+.pilot-container:hover{
+    transform: scale(1.02);
+    box-shadow:10px 10px 10px black;
 }
 .tabel-body{
     display: grid;
     grid-template-columns: repeat(2, max-content);
     justify-content: space-between;
-    row-gap: 1rem;
+    row-gap: .5rem;
 }
 .parte-sus-pilot{
     display: flex;
-    gap:2rem;
+    justify-content: space-between;
+    gap:1rem;
     padding:1rem;
     padding-bottom: 0;
 }
@@ -84,7 +91,8 @@
 }
 .parte-jos-pilot{
     display: flex;
-    gap:2rem;
+    justify-content: space-around;
+    gap:1rem;
     border-bottom:2px solid black;
     border-right:2px solid black;
     border-radius: 0  0 15px 0;
@@ -97,6 +105,9 @@
     justify-content: center;
     align-items: center;
 }
+.fastest-text{
+    display: block;
+}
 .fastest-lap > p {
     margin:0;
 }
@@ -107,8 +118,39 @@
     margin:0;
 }
 
+@media(max-width: 1700px){
+    .tabel-cursa{
+        width: 60%;
+    }
+}
+@media(max-width: 1300px){
+    .tabel-cursa{
+        width: 70%;
+    }
+}
+@media(max-width: 1100px){
+    .tabel-cursa{
+        width: 80%;
+    }
+}
+
 @media(max-width: 900px){
     .tabel-cursa{
         width: 90%;
+    }
+    .nume-pilot{
+        font-size: 1.6rem;
+    }
+    .parte-sus-pilot{
+        display: flex;
+        justify-content: space-around;
+        padding:0;
+    }
+    .parte-jos-pilot{
+        padding:0;
+    }
+    .pilot-container{
+        margin-bottom: 1rem;
+        gap:.5rem
     }
 }
