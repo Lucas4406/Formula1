@@ -12,6 +12,9 @@
     margin-bottom: 1rem;
     font-weight: bold;
 }
+.titlu-pagina-curse.dark-mode{
+    color:white;
+}
 .tabel-container-curse{
     width: 100vw;
     display: flex;
@@ -26,6 +29,11 @@
     padding:.5rem;
     width: 50%;
     font-size: 1.4rem;
+}
+.tabel-cursa.dark-mode{
+    background-color: #333;
+    color: white;
+    border-color: white;
 }
 .tabel-header{
     display:flex;
@@ -98,6 +106,9 @@
     border-radius: 0  0 15px 0;
     padding:1rem;
     padding-top: 0;
+}
+.parte-jos-pilot.dark-mode{
+    border-color: white;
 }
 .fastest-lap{
     display: flex;
