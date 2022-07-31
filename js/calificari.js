@@ -14,7 +14,6 @@ fetch("https://ergast.com/api/f1/2022/qualifying.json?limit=1000")
         const dataCursa = qualiCard.querySelector(".data-cursa")
         const locCursa = qualiCard.querySelector(".loc-cursa")
         var lengthQuali = data.MRData.RaceTable.Races.length
-        console.log(data.MRData.RaceTable.Races[0].Circuit.Location.country);
         for(var i=lengthQuali-1;i>=0;i--){
             var newQualiCard = document.createElement("div")
             numeCursa.textContent = data.MRData.RaceTable.Races[i].Circuit.circuitName

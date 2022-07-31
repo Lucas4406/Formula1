@@ -6,7 +6,6 @@ fetch("https://ergast.com/api/f1/2022/results.json?limit=1000")
     response.json()
 )
 .then(result => {
-    console.log(result);
     const constructorCard = templateCursa.content.cloneNode(true).children[0]
     const numeCursa  = constructorCard.querySelector(".nume-cursa")
     const dataCursa  = constructorCard.querySelector(".data-cursa")
@@ -32,5 +31,11 @@ fetch("https://ergast.com/api/f1/2022/results.json?limit=1000")
         newConstructor.classList.add("tabel-cursa")
         newConstructor.innerHTML = constructorCard.innerHTML
         tabelContainer.appendChild(newConstructor)
+        darkMode = localStorage.getItem("darkMode")
+        if(darkMode !== "enabled"){
+            enableDarkMode()
+        } else{
+            disableDarkMode()
+        }
     }
 })
