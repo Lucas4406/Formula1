@@ -8,7 +8,7 @@ const textClCursa = document.querySelectorAll(".text-cl-cursa")
 const textClQuali = document.querySelectorAll(".text-cl-quali")
 const textData = document.querySelectorAll(".text-data")
 const textLoc = document.querySelectorAll(".text-loc")
-fetch("/json/piloti.json")
+fetch("https://aqueous-escarpment-24578.herokuapp.com/https://api-formula1.herokuapp.com/piloti")
 .then(response => 
     response.json()
 )

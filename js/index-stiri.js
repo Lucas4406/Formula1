@@ -1,6 +1,6 @@
 const stiritemplate  = document.querySelector("#template")
 const contentGrid = document.querySelector(".content-grid")
-fetch("/json/stiri.json")
+fetch("https://aqueous-escarpment-24578.herokuapp.com/https://api-formula1.herokuapp.com/stiri")
 .then(response => 
     response.json()
 )

@@ -9,7 +9,7 @@ const tipStire = document.querySelectorAll("#tipstire")
 const textCont = document.querySelectorAll("#textCont")
 const link1 = document.querySelector("#link1")
 const link2 = document.querySelector("#link2")
-fetch("/json/stiri.json")
+fetch("https://aqueous-escarpment-24578.herokuapp.com/https://api-formula1.herokuapp.com/stiri")
 .then(response => 
     response.json()
 ).then(data => {
