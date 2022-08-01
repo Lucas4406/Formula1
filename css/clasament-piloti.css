@@ -117,5 +117,9 @@ p{
 @media(max-width:1000px){
     .piloti-grid{
         grid-template-columns: 1fr 1fr;
+        width: 95vw;
+    }
+    .pilot-container{
+        height: 90%;
     }
 }
