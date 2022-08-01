@@ -118,8 +118,9 @@ p{
     .piloti-grid{
         grid-template-columns: 1fr 1fr;
         width: 95vw;
+        row-gap: 2rem;
     }
     .pilot-container{
-        height: 90%;
+        height: 100%;
     }
 }
