@@ -94,6 +94,7 @@ body{
     padding:.5rem;
     left:-.5rem;
     border: 2px solid red;
+    width: 100%;
 }
 .buton.active:hover > .dropdown-menu > p{
     opacity: 1;

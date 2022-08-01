@@ -49,10 +49,14 @@
                         Echipe
                     </a>
                 </div>
-                <div class="buton">
-                    <a href="/pagini/clasament-echipe.html" style="color:red;text-decoration:none">
+                <div class="buton" id="buton-dpd" data-dropdown>
+                    <p style="color:red;margin:0" data-dropdown-button>
                         Clasament
-                    </a>
+                    </p>
+                    <div class="dropdown-menu">
+                        <a class="text-dropdown" href="/pagini/clasament-echipe.html">Echipe</a>
+                        <a class="text-dropdown" href="/pagini/clasament-piloti.html">Piloți</a>
+                    </div>
                 </div>
                 <div class="buton" id="buton-dpd" data-dropdown>
                     <p style="color:red;margin:0" data-dropdown-button>
@@ -70,36 +74,44 @@
                 </div>
             </div>
         </div>
+        <br>
         <button class="darkmodeBtn">
             <img src="/icons/night-mode.png" class="poza1">
             <img src="/icons/brightness.png" class="poza2">
         </button>
         <div class="content-wrapper">
-            <div class="piloti-grid">
-                <div class="pilot-container">
-                    <div class="pozitiepuncte">
-                        <p class="pozitie">1</p>
-                        <div class="nrpuncte-container">
-                            <p class="nrpuncte">258</p>
-                            <p class="puncte-text">PCT</p>
-                        </div>
+            <p class="piloti-text">Clasament piloți 2022</p>
+            <br>
+            <br>
+            <div class="piloti-grid"></div>
+        </div>
+        <template id="piloticlasament">
+            <div class="pilot-container">
+                <div class="pozitiepuncte">
+                    <p class="pozitie"></p>
+                    <div class="nrpuncte-container">
+                        <p class="nrpuncte"></p>
+                        <p class="puncte-text">PCT</p>
                     </div>
-                    <div class="numesteag">
+                </div>
+                <div class="numesteag">
+                    <div class="numesiculoare">
+                        <p class="culoare-pilot">|</p>
                         <div class="nume-pilot">
                             <p class="firstname"></p>
                             <p class="lastname"></p>
                         </div>
-                        <img src="/test/steag.jpg" class="img-steag">
                     </div>
-                    <p class="echipa">
-
-                    </p>    
-                    <div class="pozanumar">
-                        <img src="/test/pilot.png" class="poza-pilot">
-                        <img src="/test/numar.png" class="nr-pilot">
-                    </div>
+                    <img src="" class="img-steag">
+                </div>
+                <p class="echipa">
+                    
+                </p>    
+                <div class="pozanumar">
+                    <img src="" class="poza-pilot">
+                    <img src="" class="nr-pilot">
                 </div>
             </div>
-        </div>
+        </template>
     </body>
 </html>
