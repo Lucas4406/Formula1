@@ -1,4 +1,4 @@
-fetch("https://aqueous-escarpment-24578.herokuapp.com/https://api-formula1.herokuapp.com/stiri")
+fetch("https://aqueous-escarpment-24578.herokuapp.com/https://f1scraper44.herokuapp.com/stiri")
 .then(response => 
     response.json()
 ).then(data => {
