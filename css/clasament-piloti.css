@@ -116,11 +116,35 @@ p{
 }
 @media(max-width:1000px){
     .piloti-grid{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 40% 40%;
+        justify-content: space-between;
         width: 95vw;
         row-gap: 2rem;
     }
+}
+@media(max-width:900px){
+    .piloti-grid{
+        grid-template-columns: 40% 40%;
+        justify-content: space-around;
+        width: 95vw;
+        row-gap: 2rem;
+    }
+}
+@media(max-width:800px){
+    .piloti-grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2rem;
+        width: 90vw;
+    }
     .pilot-container{
-        height: 100%;
+        width: 90vw;
+    }
+    .img-steag{
+        height: 60%;
+        border-radius: 10px;
+        border: 1px solid black;
     }
 }
