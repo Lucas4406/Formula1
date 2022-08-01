@@ -138,7 +138,6 @@ p{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        row-gap: 2rem;
     }
     .pilot-container{
         width: 80vw;
