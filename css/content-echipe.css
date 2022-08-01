@@ -7,6 +7,10 @@
     border-bottom:0;
     border-radius:12px;
     transition:0.20s;
+    transition: transform 250ms ease-in-out;
+}
+.box-fe:hover, .box-me:hover, .box-re:hover, .box-mc:hover, .box-al:hover, .box-ha:hover, .box-wi:hover, .box-am:hover, .box-at:hover, .box-af:hover{
+    transform: scale(1.02);
 }
 .box-fe.dark-mode,
 .box-me.dark-mode,
@@ -155,6 +159,12 @@
     display:grid;
     grid-template-columns: 1fr 1fr;
 }
+.linie3{
+    background-image: url(https://www.formula1.com/etc/designs/fom-website/images/patterns/plus-x1.png);
+    background-repeat: repeat;
+    background-size: 8px;
+    border-radius: 0  0 12px 0;
+}
 .nume1, .nume2{
     font-size:1.5rem;
     display:flex;
@@ -162,8 +172,11 @@
 }
 .poza{
     width:100%;
+    transition: transform 250ms ease-in-out;
 }
-
+.box-fe:hover > .linie3 > .poza, .box-me:hover > .linie3 > .poza, .box-re:hover > .linie3 > .poza, .box-mc:hover > .linie3 > .poza, .box-al:hover > .linie3 > .poza, .box-ha:hover > .linie3 > .poza, .box-wi:hover > .linie3 > .poza, .box-am:hover > .linie3 > .poza, .box-at:hover > .linie3 > .poza, .box-af:hover > .linie3 > .poza{
+    transform: scale(1.02);
+}
 .am{
     margin:auto;
     margin-left:1.875rem;
@@ -198,7 +211,9 @@
     text-decoration: none;
     color:black;
 }
-
+.content > a:nth-child(10){
+    margin-bottom: 2rem;
+}
 @media(max-width:1200px){
     .content{
         grid-template-columns: 70%;
