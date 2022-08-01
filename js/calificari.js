@@ -47,7 +47,7 @@ fetch("https://ergast.com/api/f1/2022/qualifying.json?limit=1000")
             newQualiCard.innerHTML = qualiCard.innerHTML
             contentContainer.appendChild(newQualiCard)
             darkMode = localStorage.getItem("darkMode")
-            if(darkMode !== "enabled"){
+            if(darkMode === "enabled"){
                 enableDarkMode()
             } else{
                 disableDarkMode()
