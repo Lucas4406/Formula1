@@ -49,10 +49,14 @@
                         Echipe
                     </a>
                 </div>
-                <div class="buton">
-                    <a href="/pagini/clasament-echipe.html" style="color:red;text-decoration:none">
+                <div class="buton" id="buton-dpd" data-dropdown>
+                    <p style="color:red;margin:0" data-dropdown-button>
                         Clasament
-                    </a>
+                    </p>
+                    <div class="dropdown-menu">
+                        <a class="text-dropdown" href="/pagini/clasament-echipe.html">Echipe</a>
+                        <a class="text-dropdown" href="/pagini/clasament-piloti.html">Piloți</a>
+                    </div>
                 </div>
                 <div class="buton" id="buton-dpd" data-dropdown>
                     <p style="color:red;margin:0" data-dropdown-button>
@@ -76,7 +80,7 @@
             <img src="/icons/brightness.png" class="poza2">
         </button>
         <div class="content-wrapper">
-            <p class="piloti-text">Clasament piloti 2022</p>
+            <p class="piloti-text">Clasament piloți 2022</p>
             <br>
             <br>
             <div class="piloti-grid"></div>
@@ -87,7 +91,7 @@
                     <p class="pozitie"></p>
                     <div class="nrpuncte-container">
                         <p class="nrpuncte"></p>
-                        <p class="puncte-text"></p>
+                        <p class="puncte-text">PCT</p>
                     </div>
                 </div>
                 <div class="numesteag">

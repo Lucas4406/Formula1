@@ -15,10 +15,6 @@ echipeBtn.addEventListener("click", ()=>{
     window.location.assign("pagini/echipe.html")
 })
 
-const pilotiBtn = document.getElementById("clasament-button")
-pilotiBtn.addEventListener("click", ()=>{
-    window.location.assign("pagini/clasament-echipe.html")
-})
 const istorieBtn = document.getElementById("istorie-button")
 istorieBtn.addEventListener("click", ()=>{
     window.location.assign("pagini/istorie.html")
