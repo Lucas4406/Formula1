@@ -30,6 +30,16 @@ p{
     padding-bottom: 0;
     max-width: 500px;
     position: relative;
+    transition: transform 250ms ease-in-out;
+}
+.poza-pilot{
+    transition: transform 250ms ease-in-out;
+}
+.pilot-container:hover{
+    transform: scale(1.02);
+}
+.pilot-container:hover > .pozanumar > .poza-pilot{
+    transform: scale(1.05);
 }
 .pozitiepuncte{
     display: flex;
