@@ -11,7 +11,7 @@ body.dark-mode{
     z-index: 20;
 }
 .photo{
-    width:100%;
+    width: 100%;
     overflow: hidden;
     transition: transform 200ms ease-in-out;
     object-fit: cover;
@@ -48,6 +48,10 @@ body.dark-mode{
     margin-bottom: 0;
     margin-top:0;
     padding-top: 1.25rem;
+    flex-grow: 2;
+}
+.content-row{
+    z-index:22;
 }
 .photo{
     z-index:-1;
@@ -72,9 +76,6 @@ body.dark-mode{
     border-bottom-right-radius: 0;
     border-bottom: 0;
     z-index:20;
-}
-.content-row{
-    z-index:22;
 }
 .content-text.dark-mode{
     border-color: white;

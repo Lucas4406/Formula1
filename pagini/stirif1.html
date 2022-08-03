@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Clasament</title>
+        <title>Stiri</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
         <meta name="viewport" content="width=device-width, initial-scale=0.5">
         <link rel="stylesheet" href="/css/header.css">
         <link rel="stylesheet" href="/css/content.css">
-        <link rel="stylesheet" href="/css/clasament.css">
+        <script src="/js/stirif1-index.js" defer></script>
         <link rel="stylesheet" href="/css/dark-mode.css">
-        <script src="/js/dark-mode/clasament-dark.js" defer></script>
-        <script src="/js/clasament.js" defer></script>
+        <script src="/js/stirif1.js" defer></script>
+        <script src="/js/dark-mode/dark-mode.js" defer></script>
         <script src="/js/dropdown.js" defer></script>
         <link rel="SHORTCUT ICON" href="/poze/logo-f1.ico" type="image/x-icon"/>
         <link rel="ICON" href="/poze/logo-f1.ico" type="image/ico"/>
@@ -22,32 +22,22 @@
     <body>
         <div class="header">
             <div class="sus">
-                <div class="logo">
-                    <a href="/index.html">
-                        <img src="/poze/f1.png"; class="logo-f1" >
-                    </a>
+                <div class="logo" id="logo-button">
+                    <img src="/poze/f1.png" class="logo-f1">
                 </div>
                 <div class="fia">
-                    <a href="https://www.fia.com/" target="_blank">
-                        <img src="/poze/imageedit_3_3849553840.png" class="logo-fia">
-                    </a>
+                    <img src="/poze/imageedit_3_3849553840.png" class="logo-fia">
                 </div>
             </div>
             <div class="bar">
-                <div class="buton">
-                    <a href="/pagini/stirif1.html" style="color:red;text-decoration:none">
-                        Știri
-                    </a>
+                <div class="buton" id="stiri-button" title="Spre pagina cu stiri">
+                    <p class="buton-text">Știri</p>
                 </div>
-                <div class="buton">
-                    <a href="/pagini/program.html" style="color:red;text-decoration:none">
-                        Program
-                    </a>
+                <div class="buton" id="program-button" title="Spre pagina cu program">
+                    <p class="buton-text">Program</p>
                 </div>
-                <div class="buton">
-                    <a href="/pagini/echipe.html" style="color:red;text-decoration:none">
-                        Echipe
-                    </a>
+                <div class="buton" id="echipe-button" title="Spre pagina cu echipe">
+                    <p class="buton-text">Echipe</p>
                 </div>
                 <div class="buton" id="buton-dpd" data-dropdown>
                     <p style="color:red;margin:0" data-dropdown-button>
@@ -67,10 +57,8 @@
                         <a class="text-dropdown" href="/pagini/calificari-res.html">Calificări</a>
                     </div>
                 </div>
-                <div class="buton">
-                    <a href="/pagini/istorie.html" style="color:red;text-decoration:none">
-                        Istorie
-                    </a>
+                <div class="buton" id="istorie-button" title="Spre pagina cu istorie">
+                    <p class="buton-text">Istorie</p>
                 </div>
             </div>
         </div>
@@ -78,27 +66,35 @@
             <img src="/icons/night-mode.png" class="poza1">
             <img src="/icons/brightness.png" class="poza2">
         </button>
-        <div class="content-container">
+        <div class="stiri">
+            <div class="titlu">
+                <div>
+                    <img src="/poze/checker.webp" class="titlu-poza">
+                </div>
+                <div class="titlu-text">
+                    Știri de ultimă oră
+                </div>
+                <div>
+                    <img src="/poze/checker.webp" class="titlu-poza">
+                </div>
+            </div>
         </div>
-        <template id="templateConst">
-            <div>
-                <div class="card-const">
-                    <div class="partesus">
-                        <p class="pozitie" id="pozitie"></p>
-                        <p class="nume-echipa" id="numeEchipa"></p>
-                    </div>
-                    <div class="partejos">
-                        <div class="curse-castigate-cont">
-                            <p class="text-curse">Curse câștigate</p>
-                            <p class="curse-castigate" id="curseCastigate"></p>
+        <div class="content-grid">
+        </div>
+        <template id="template">
+            <a href="">
+                <div class="stire">
+                    <div class="content-row">
+                        <div class="content-text">
+                            <p class="text" id="stiretext">
+                            </p>
                         </div>
-                        <div class="nrpuncte-cont">
-                            <p class="text-puncte"> Număr puncte</p>
-                            <p class="nrpuncte" id="nrpuncte"></p>
+                        <div class="content-photo">
+                            <img src="" class="photo" id="stirephoto">
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
         </template>
     </body>
 </html>
