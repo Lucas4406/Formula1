@@ -13,6 +13,7 @@ fetch("https://aqueous-escarpment-24578.herokuapp.com/https://f1scraper44.heroku
             stireText.textContent = data[i].titlu
             pozaStire.src = `${data[i].poza}`
             newCard.href=data[i].linkuri
+            newCard.target = "_blank"
             newCard.classList.add("ltag")
             newCard.innerHTML = card.innerHTML
             contentGrid.appendChild(newCard)
