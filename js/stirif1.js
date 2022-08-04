@@ -1,6 +1,6 @@
 const stiritemplate  = document.querySelector("#template")
 const contentGrid = document.querySelector(".content-grid")
-fetch("https://aqueous-escarpment-24578.herokuapp.com/https://f1scraper44.herokuapp.com/stiri-noi")
+fetch("https://aqueous-escarpment-24578.herokuapp.com/https://f1scraper44.herokuapp.com/stiri-translate")
 .then(response => 
     response.json()
 )
