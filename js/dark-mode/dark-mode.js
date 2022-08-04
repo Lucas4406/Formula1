@@ -4,11 +4,13 @@ const stiri = document.querySelector(".stiri")
 const darkmodeBtn = document.querySelector(".darkmodeBtn")
 const poza2 = document.querySelector(".poza2")
 const poza1 = document.querySelector(".poza1")
+const templateDark = document.querySelector("#template")
 const enableDarkMode = () =>{
     const lTag = document.querySelectorAll(".ltag")
     const contText = document.querySelectorAll(".content-text")
     body.classList.add("dark-mode")
     stiri.classList.add("dark-mode")
+    templateDark.classList.add("dark-mode")
     for (var i = 0; i < contText.length; i++) {
         contText[i].classList.add("dark-mode")
     }
@@ -24,6 +26,7 @@ const disableDarkMode = () =>{
     const contText = document.querySelectorAll(".content-text")
     body.classList.remove("dark-mode")
     stiri.classList.remove("dark-mode")
+    templateDark.classList.remove("dark-mode")
     for (var i = 0; i < contText.length; i++) {
         contText[i].classList.remove("dark-mode")
     
